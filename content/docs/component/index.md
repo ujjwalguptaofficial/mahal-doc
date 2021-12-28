@@ -40,8 +40,8 @@ A component have following features -
 * Prop
 * Event
 * Model
-* If else
-* For
+* Conditional
+* List
 * Dynamic class
 * Directive
 * Slot
