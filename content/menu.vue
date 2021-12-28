@@ -4,13 +4,13 @@
       <button v-if="shouldShowMenuIcon" @click="onMenuBtnClick" class="b-menu__left__hamburger">
         <i class="material-icons">menu</i>
       </button>
-      <a class="row b-menu__left__icon content-v-center" href="" title="JsStore Index Page">
-        <img :src="'logo.svg' | imgPath" alt="MaticJs Logo" />
-        <span class="ml-10px">Matic.js</span>
+      <a class="row b-menu__left__icon content-v-center" href="" title="Mahal Index Page">
+        <img :src="'logo.svg' | imgPath" alt="mahal Logo" />
+        <span class="ml-10px">Mahal</span>
       </a>
     </div>
     <div id="b-menu__github-info" class="col-6 col-sm-8 row content-v-center b-menu__github-info">
-      <a class="b-menu__github-info__item" title="star jsstore" :href="githubUrl">
+      <a class="b-menu__github-info__item" title="star mahal" :href="githubUrl">
         <i class="fab fa-github"></i>
         Star
         <span class="star-count" v-if="starCount">{{ starCount }}</span>
@@ -49,7 +49,7 @@ import { bus } from '@/utils';
 
 export default {
   created() {
-    this.repoUrl = 'maticnetwork/matic.js'
+    this.repoUrl = 'ujjwalguptaofficial/mahal'
   },
   computed: {
     shouldShowMenuIcon() {

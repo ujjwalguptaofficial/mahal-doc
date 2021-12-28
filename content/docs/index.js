@@ -12,10 +12,6 @@ module.exports = [
     url: 'formatter',
   },
   {
-    text: 'Formatter',
-    url: 'formatter',
-  },
-  {
     text: 'Reactive',
     url: 'reactive',
   },
@@ -44,8 +40,8 @@ module.exports = [
     url: 'list',
   },
   {
-    text: 'Dynamic class',
-    url: 'dynamic-class',
+    text: 'Conditional class',
+    url: 'conditional-class',
   },
   {
     text: 'Directive',

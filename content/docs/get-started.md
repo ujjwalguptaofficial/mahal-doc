@@ -9,14 +9,15 @@ Description: 'Get started with mahal'
 The `mahal` is a javascript framework for UI development. It is similar to react or vue but without virtual DOM. 
 
 <div class="highlight">
-Mahal is a hindi word which means palace. In human life - every house is a palace for the people leaving in, in the same way an UI application is important for the users and can be considered as mahal.
+Mahal is a hindi word which means palace.
 </div>
+<br>
 
-In this Get Started tutorial - we will learn about how we can create a simple counter app.
+**In this Get Started tutorial - we will learn about how we can create a simple counter app.**
 
 ## Installation
 
-**Install the mahal package via npm:**
+Install the mahal package via npm
 
 ```bash
 npm i mahal
