@@ -8,9 +8,7 @@ Description: 'Get started with mahal'
 
 Directive are reusable method which can be attached on element for low level access to element. Similar to component - they have lifecycle. 
 
-<div class="highlight">
-The `model` and `class` are directive which needs direct access to html elements for accomplishing task.
-</div>
+The `model` and `class` are examples of directive.
 
 A directive is called before the target element is rendered. The directive has access to element and parameter passed to it. There are three lifecycle for directive - 
 
@@ -48,7 +46,7 @@ export default class extends Component {
 The above directive just use the `element` to set attribute on the target element. It doesn't use any life cycle.
 
 
-** Example2 - Let's create a highlight directive which will highlight the target element.**
+**Example2 - Let's create a highlight directive which will highlight the target element.**
 
 ```
 <html>

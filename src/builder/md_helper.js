@@ -1,18 +1,29 @@
 var showdown = require('showdown'),
-  fse = require('fs-extra'),
-  converter = new showdown.Converter(),
-  fm = require('front-matter')
+  fse = require('fs-extra');
+var fm = require('front-matter');
+
+var converter = new showdown.Converter({
+  extensions: [_ => {
+    return {
+      type: 'html',
+      regex: '<code',
+      replace: '<code v-pre'
+    }
+  }]
+});
 const path = require('path')
 
 function getAllFilesFromFolder(folderName) {
   return fse.readdirSync(folderName)
 }
-exports.convertMdToVueAndSaveInFolder = function(srcFilePath, targetfolderToSave, layout) {
+// converter.addExtension();
+exports.convertMdToVueAndSaveInFolder = function (srcFilePath, targetfolderToSave, layout) {
   // console.log(...arguments);
   var content = fse.readFileSync(srcFilePath, {
     encoding: 'utf8',
   })
   var fmData = fm(content)
+
   var html = converter.makeHtml(fmData.body)
   var fileName = path.basename(srcFilePath, '.md')
   var targetfilePath = path.join(targetfolderToSave, fileName + '.vue')
@@ -35,7 +46,7 @@ exports.convertMdToVueAndSaveInFolder = function(srcFilePath, targetfolderToSave
 }
 
 function addMetaTags(layout, metaTags) {
-  var addTag = function(stringConst, tagName) {
+  var addTag = function (stringConst, tagName) {
     // var stringConst = 'title=';
     // console.log('layout', layout);
     if (metaTags[tagName] != null) {
