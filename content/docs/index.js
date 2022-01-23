@@ -52,17 +52,26 @@ module.exports = [
     url: 'directive',
   },
   {
-    text: 'Slot',
-    url: 'slot',
-  },
-  {
     text: 'Formatter',
     url: 'formatter',
   },
   {
     text: 'Advanced',
     url: 'advanced',
+    expand: true,
     children: [
+      {
+        text: 'Slot',
+        url: 'slot',
+      },
+      {
+        text: 'Fragment',
+        url: 'fragment',
+      },
+      {
+        text: 'DOM',
+        url: 'dom',
+      },
       {
         text: "Dynamic Component",
         url: "dynamic-component"

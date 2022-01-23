@@ -81,7 +81,7 @@ Let's use the above Component -
 ```
 <html>
 <div>
-     <User class="users" #for(user in users)>
+     <User class="users" :for(user in users)>
         <target>{{user.name}}</target>
         <target name="gender">{{user.gender}}</target>
     </User>

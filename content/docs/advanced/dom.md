@@ -1,0 +1,74 @@
+---
+Title: 'Dom'
+Keywords: 'mahal'
+Description: 'Get started with mahal'
+---
+
+# DOM
+
+The component DOM is available at component `element` property. This allows you to view the DOM and also manipulate it when required in edge cases.
+
+**Note:-** It is not advisable to manipulate element directly unless not possible to achieve using the declarative HTML. Manipulating element directly might have some unknown effect.
+
+```
+<html>
+<div>
+   Hello
+</div>
+</html>
+<script>
+import { Component } from "mahal"
+export class MyComponent extends Component {
+
+   onInit(){
+       console.log('element dom', this.element);
+   }
+
+}
+</script>
+```
+
+## find
+
+`find` method can be used for querying a node inside the current component. It is similar to `querySelector`.
+
+```
+<html>
+<div>
+   <div class='hello'>Hello</div>
+</div>
+</html>
+<script>
+import { Component } from "mahal"
+export class MyComponent extends Component {
+
+   onInit(){
+       const el = this.find('.hello');
+   }
+
+}
+</script>
+```
+
+## findAll
+
+`find` method can be used for querying multiple node inside the current component. It is similar to `querySelectorAll`.
+
+```
+<html>
+<div>
+   <div class='hello'>Hello</div>
+   <div class='hello'>World</div>
+</div>
+</html>
+<script>
+import { Component } from "mahal"
+export class MyComponent extends Component {
+
+   onInit(){
+       const els = this.findAll('.hello');
+   }
+
+}
+</script>
+```
