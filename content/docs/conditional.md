@@ -12,7 +12,7 @@ The directive `if` is used to render an element conditionally. The element will 
 
 ```
 <html>
-    <div #if(flag)>Marvel</div>
+    <div :if(flag)>Marvel</div>
 </html>
 <script>
 import {Component, Reactive } from "mahal"
@@ -31,8 +31,8 @@ The directive `else` block can be used to indicate an else condition for `if`.
 
 ```
 <html>
-    <div #if(flag)>Marvel</div>
-    <div #else>DC</div>
+    <div :if(flag)>Marvel</div>
+    <div :else>DC</div>
 </html>
 <script>
 import {Component, Reactive } from "mahal"
@@ -52,9 +52,9 @@ else-if serves as "else-if" block for "if" condition.
 
 ```
 <html>
-    <div #if(marvel)>Marvel</div>
-    <div #elseif(dc)>DC</div>
-    <div #else>Cartoon network</div>
+    <div :if(marvel)>Marvel</div>
+    <div :else-if(dc)>DC</div>
+    <div :else>Cartoon network</div>
 </html>
 <script>
 import {Component, Reactive } from "mahal"

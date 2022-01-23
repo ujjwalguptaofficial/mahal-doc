@@ -8,8 +8,12 @@ module.exports = [
     url: 'component',
   },
   {
-    text: 'Formatter',
-    url: 'formatter',
+    text: 'State',
+    url: 'state',
+  },
+  {
+    text: 'Component Lifecycle',
+    url: 'component-lifecycle',
   },
   {
     text: 'Reactive',
@@ -50,6 +54,10 @@ module.exports = [
   {
     text: 'Slot',
     url: 'slot',
+  },
+  {
+    text: 'Formatter',
+    url: 'formatter',
   },
   {
     text: 'Advanced',

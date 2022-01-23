@@ -1,5 +1,5 @@
 ---
-Title: 'Component'
+Title: 'Reactive'
 Keywords: 'mahal'
 Description: 'Get started with mahal'
 ---
@@ -8,24 +8,22 @@ Description: 'Get started with mahal'
 
 By default a component variable are not reactive which means if you will change the value - it won't be updated in the UI.
 
+You can use `setState` method to trigger the update but this increase the responsibility and code size ofcourse.
+
 A variable can be made reactive by using a decorator - `Reactive`
 
 ```
 <html>
     <div>My name is {{name}}</div>
+    <button @click="changeName">Change name</button>
 </html>
+
 <script>
 import {Component, Reactive } from "mahal"
 export default class MainComponent extends Component {
 
     @Reactive
     name = "ujjwal gupta"
-
-    constructor(){
-        setTimeout(()=>{
-            this.changeName();
-        },1000)
-    }
 
     changeName(){
         this.name="DC is love."

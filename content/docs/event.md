@@ -6,7 +6,7 @@ Description: 'Get started with mahal'
 
 # Event
 
-In mahal - you can listen to an event by using `on:${eventname}` syntax -
+In mahal - you can listen to an event by using `on:<eventname>` or `@<eventName>` syntax -
 
 ```
 <html>

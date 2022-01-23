@@ -12,11 +12,11 @@ A formatter is nothing but a method which can be used in the UI code. A pipe sym
 
 A decorator `Formatter` is used to declare a method formatter. A formatter method accepts a parameter which is converted into some other format or value.
 
-Let's create a capitalize formatter which will convert a value into upper case.
+Let's create a **upper** formatter which will convert a value into upper case.
 
 ```
 <html>
-    <div>My name is {{name | capitalize}}</div>
+    <div :data-name="name | upper">My name is {{name | upper}}</div>
 </html>
 <script>
 import {Component, Formatter } from "mahal"
@@ -24,7 +24,7 @@ export class MyComponent extends Component {
 
     name = "ujjwal gupta"
 
-    @Formatter('capitalize')
+    @Formatter('upper')
     toUpper(value){
         return value.toUpperCase();
     }
@@ -32,6 +32,8 @@ export class MyComponent extends Component {
 }
 </script>
 ```
+
+👉 A formatter can be used in `text binding` and `attributes`. 
 
 ## Multiple formatter
 

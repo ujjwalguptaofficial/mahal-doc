@@ -10,7 +10,7 @@ A Model is a directive which can be used as shorthand for input event. It is a t
 
 ```
 <html>
-    <input type="text" #model(value) />
+    <input type="text" :model(value) />
 </html>
 <script>
 import {Component, Reactive } from "mahal"
@@ -23,4 +23,4 @@ export default class NameComponent extends Component {
 </script>
 ```
 
-
+In the above code - if you will enter something into the input field, the script state will be automatically updated and in the same way if you will change the value from the state then input field value will be automatically updated.

@@ -23,9 +23,9 @@ A directive is called before the target element is rendered. The directive has a
 ```
 <html>
 <div>
-  <div id="el3" #name>Hey</div>
-  <div id="el1" #name('ujjwal') #fu>Hey</div>
-  <div id="el2" #name(name)>Hey</div>
+  <div id="el3" :name>Hey</div>
+  <div id="el1" :name('ujjwal') #fu>Hey</div>
+  <div id="el2" :name(name)>Hey</div>
 </div>
 </html>
 <script>
@@ -51,11 +51,11 @@ The above directive just use the `element` to set attribute on the target elemen
 ```
 <html>
 <div>
-  <div id="el4" #highlight>Hey</div>
-  <div id="el5" #highlight('grey')>Hey</div>
-  <div id="el6" #highlight('blue','red')>Hey</div>
-  <div #if(el7) id="el7" #highlight(backgroundColor , 'yellow')>Hey</div>
-  <div  id="el8" #highlight(backgroundColor , color )>Hey</div>
+  <div id="el4" :highlight>Hey</div>
+  <div id="el5" :highlight('grey')>Hey</div>
+  <div id="el6" :highlight('blue','red')>Hey</div>
+  <div #if(el7) id="el7" :highlight(backgroundColor , 'yellow')>Hey</div>
+  <div  id="el8" :highlight(backgroundColor , color )>Hey</div>
 </div>
 </html>
 <script>
