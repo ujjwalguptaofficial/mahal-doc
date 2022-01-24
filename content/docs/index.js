@@ -75,6 +75,10 @@ module.exports = [
       {
         text: "Dynamic Component",
         url: "dynamic-component"
+      },
+      {
+        text: "Async Component",
+        url: "async-component"
       }
     ]
   },

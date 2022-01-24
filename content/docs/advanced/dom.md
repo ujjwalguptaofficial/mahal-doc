@@ -28,6 +28,32 @@ export class MyComponent extends Component {
 </script>
 ```
 
+## ref
+
+`ref` is a directive which allows you to store a DOM element in a variable. This is handy in case when you want to interact with a HTML node.
+
+```
+<html>
+<div>
+   <div :ref(helloDiv)>Hello</div>
+</div>
+</html>
+<script>
+import { Component } from "mahal"
+export class MyComponent extends Component {
+
+   onInit(){
+       this.on("mount", this.mounted);
+   }
+
+   mounted(){
+     const divEl = this.helloDiv;
+   }
+
+}
+</script>
+```
+
 ## find
 
 `find` method can be used for querying a node inside the current component. It is similar to `querySelector`.
@@ -52,7 +78,7 @@ export class MyComponent extends Component {
 
 ## findAll
 
-`find` method can be used for querying multiple node inside the current component. It is similar to `querySelectorAll`.
+`findAll` method can be used for querying multiple node inside the current component. It is similar to `querySelectorAll`.
 
 ```
 <html>
