@@ -17,35 +17,46 @@ Mahal is a hindi word which means palace.
 
 ## Installation
 
+mahal provides **mahal-creator** for initializing the project and help you with the development.
+
 Install the mahal package via npm
 
 ```bash
-npm i mahal
+npm i mahal-creator -g
 ```
+
+**Note-** If the installation fails - try with sudo.
 
 ## Setup
 
-```
-import { Mahal } from "mahal";
-import Main from "./components/main";
-
-export const app = new Mahal(Main, document.querySelector('#app'));
+Once `mahal-creator` is installed. Use this command to initiate the project - 
 
 ```
+mahal-creator init
+```
 
-### Components
+### Component
 
-Let's create a main component. Create a file named - `count.mahal`
+A Component is reusable piece of UI code and acts as buliding block for your app. A single component contains - 
+
+1. HTML - html code to represent UI.
+2. Script - javascript code for handling logic
+3. Style - css code for styling the UI.
+
+Let's create a component for our counter app. Create a file - `counter.mahal`
 
 ```
 <html>
+
 <div>
   <div>{{count}}</div>
   <button on:click="incrementCount">Increment count</button>
 </div>
+
 </html>
+
 <script>
-import {Component,Reactive} from "mahal";
+import { Component, Reactive } from "mahal";
 export class Main {
 
   @Reactive
@@ -59,7 +70,19 @@ export class Main {
 
 ```
 
- 
+The above component - 
+
+1. Renders the `count` from the script.
+2. Contains a button which will call method `incrementCount` on click.
+3. It uses `Reactive` decorator which makes the `count` variable reactive. It means if you will change the value of `count` - automatically it will be updated in UI.
+
+Let's use this `counter` component now. Open `app.mahal` and add this component as children.
+
+```
+
+```
+
+We hope you are able to understand this tutorial. Now let's make our `mahal (palace)` and show it to world. 
 
 ### Some important links
 

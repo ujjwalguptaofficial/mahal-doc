@@ -8,7 +8,7 @@ Description: 'Get started with mahal'
 
 A Component is reusable piece of UI code and acts as buliding block for your app. A single component contains - 
 
-1. Html - html code to represent UI.
+1. HTML - html code to represent UI.
 2. Script - javascript code for handling logic
 3. Style - css code for styling the UI.
 
