@@ -6,7 +6,7 @@ Description: 'Get started with mahal'
 
 # Fragment
 
-Fragment let you group list of element without adding extra nodes. 
+`fragment` is a special component, which lets you group list of element without adding extra nodes. 
 
 ```
 <html>
@@ -18,6 +18,8 @@ Fragment let you group list of element without adding extra nodes.
 </div>
 </html>
 ```
+
+👉 You can also use empty tag as shorthand for fragment `<>`.
 
 Fragment can be used to render the list of elements conditionally.
 

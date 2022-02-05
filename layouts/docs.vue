@@ -42,14 +42,14 @@
         class="btn rounded secondary margin-bottom-70px"
         alt="discord link"
         target="_blank"
-        href="https://discord.com/invite/polygon"
+        href="#"
       >
-        <i class="fab fa-discord"></i>
+        <i class="fas fa-question"></i>
       </a>
       <a
         alt="edit this doc"
         target="_blank"
-        :href="`https://github.com/maticnetwork/matic.js/edit/docs/docs//content${currentUrl}.md`"
+        :href="`https://github.com/ujjwalguptaofficial/mahal-doc/edit/main/content${currentUrl}.md`"
         class="btn secondary"
         fixed
         bottom

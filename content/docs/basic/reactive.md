@@ -1,7 +1,7 @@
 ---
 Title: 'Reactive'
-Keywords: 'mahal'
-Description: 'Get started with mahal'
+Keywords: 'reactive, mahal'
+Description: 'Mahal provides Reactive decorator which can be used for two way binding.'
 ---
 
 # Reactive

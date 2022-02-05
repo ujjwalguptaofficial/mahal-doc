@@ -5,7 +5,7 @@
         <i class="material-icons">menu</i>
       </button>
       <a class="row b-menu__left__icon content-v-center" href="" title="Mahal Index Page">
-        <img :src="'logo.svg' | imgPath" alt="mahal Logo" />
+        <img :src="'logo.png' | imgPath" alt="mahal Logo" />
         <span class="ml-10px">Mahal</span>
       </a>
     </div>

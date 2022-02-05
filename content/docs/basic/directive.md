@@ -1,14 +1,14 @@
 ---
-Title: 'Component'
+Title: 'Directive'
 Keywords: 'mahal'
-Description: 'Get started with mahal'
+Description: 'Directive are reusable method which can be attached on element for low level access to element.'
 ---
 
 # Directive
 
 Directive are reusable method which can be attached on element for low level access to element. Similar to component - they have lifecycle. 
 
-The `model` and `class` are examples of directive.
+The `model`, `class`, `html` are examples of directive.
 
 A directive is called before the target element is rendered. The directive has access to element and parameter passed to it. There are three lifecycle for directive - 
 
@@ -76,7 +76,7 @@ export default class extends Component {
 
     @Directive('highlight')
     highlightDirective(el, binding, component) {
-        isDirectiveDestoyedCalled=false;
+        var isDirectiveDestoyedCalled=false;
         function handle() {
             // when there are multiple argument passed, params becomes array otherwise basic type.
 
