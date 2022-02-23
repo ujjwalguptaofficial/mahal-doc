@@ -5,8 +5,8 @@
         <div class="ml-20px" style="font-size: 150px">
           <img
             class="responsive-img"
-            src="/img/logo_1.png"
-            alt="JsStore logo"
+            :src="'logo_1.png' | imgPath"
+            alt="logo"
             style="width: 200px"
           />ahal
         </div>

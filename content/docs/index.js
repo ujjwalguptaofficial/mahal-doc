@@ -84,8 +84,8 @@ module.exports = [
         url: "dynamic-component"
       },
       {
-        text: "Async Component",
-        url: "async-component"
+        text: "Code Splitting",
+        url: "code-splitting"
       }
     ]
   },
