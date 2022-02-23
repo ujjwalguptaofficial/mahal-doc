@@ -13,9 +13,16 @@
       </div>
       <div v-if="false" id="divStyle"></div>
     </div>
-    <div sm12 offset-md1 md10 offset-xl-2 xl8 class="margin-top-40px">
+    <div
+      sm12
+      offset-md1
+      md10
+      offset-xl-2
+      xl8
+      class="margin-top-40px width-full"
+    >
       <div id="divOverview">
-        <h3>Simple, modern front end framework.</h3>
+        <h3>Simple, modern web application framework for UI development.</h3>
         <!-- <div>Simple, modern front end framework.</div> -->
       </div>
       <div class="row content-center mt-20px">
@@ -86,8 +93,8 @@ export default {
         subTitle: "Less memory, No diff calculation. Thus faster.",
       },
       {
-        title: "Write code that speaks",
-        subTitle: "Clean, managable code",
+        title: "Powerful but small in size",
+        subTitle: "21kb minified",
       },
       {
         title: "Better documenting",
@@ -152,10 +159,17 @@ export default {
   text-align: center;
   margin-top: 30px;
 }
+.features {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+}
 
 .features__item {
   margin-bottom: 28px;
-  margin-right: 28x;
+  margin-right: 28px;
   width: 350px;
 }
 </style>

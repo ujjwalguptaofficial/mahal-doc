@@ -1,15 +1,29 @@
 <template>
   <div class="b-menu row">
-    <div class="row col-6 col-sm-4 b-menu__left">
-      <button v-if="shouldShowMenuIcon" @click="onMenuBtnClick" class="b-menu__left__hamburger">
+    <div
+      :style="{ visibility: $route.path == '/' ? 'hidden' : 'visible' }"
+      class="row col-6 col-sm-4 b-menu__left"
+    >
+      <button
+        v-if="shouldShowMenuIcon"
+        @click="onMenuBtnClick"
+        class="b-menu__left__hamburger"
+      >
         <i class="material-icons">menu</i>
       </button>
-      <a class="row b-menu__left__icon content-v-center" href="" title="Mahal Index Page">
+      <a
+        class="row b-menu__left__icon content-v-center"
+        href=""
+        title="Mahal Index Page"
+      >
         <img :src="'logo_1.png' | imgPath" alt="mahal Logo" />
         <span class="ml-10px">Mahal</span>
       </a>
     </div>
-    <div id="b-menu__github-info" class="col-6 col-sm-8 row content-v-center b-menu__github-info">
+    <div
+      id="b-menu__github-info"
+      class="col-6 col-sm-8 row content-v-center b-menu__github-info"
+    >
       <a class="b-menu__github-info__item" title="star mahal" :href="githubUrl">
         <i class="fab fa-github"></i>
         Star
@@ -36,73 +50,79 @@
         </a>
       </span>
       <span class="b-menu__github-info__item hide-on-mobile">
-      <template v-if="release">
-        <span class="ml-10px mr-10px">|</span>
-        <a target="_blank" :href="release.url">{{ release.tag }}</a>
-      </template>
+        <template v-if="release">
+          <span class="ml-10px mr-10px">|</span>
+          <a target="_blank" :href="release.url">{{ release.tag }}</a>
+        </template>
       </span>
     </div>
   </div>
 </template>
 <script>
-import { bus } from '@/utils';
+import { bus } from "@/utils";
 
 export default {
   created() {
-    this.repoUrl = 'ujjwalguptaofficial/mahal'
+    this.repoUrl = "ujjwalguptaofficial/mahal";
   },
   computed: {
     shouldShowMenuIcon() {
-      return this.$route.path != '/'
+      return this.$route.path != "/";
     },
     githubUrl() {
-      return 'https://github.com/' + this.repoUrl
+      return "https://github.com/" + this.repoUrl;
     },
     forkUrl() {
-      return this.githubUrl + '/fork'
+      return this.githubUrl + "/fork";
     },
     apiUrl() {
-      return 'https://api.github.com/repos/' + this.repoUrl
+      return "https://api.github.com/repos/" + this.repoUrl;
     },
   },
   data() {
     return {
       release: null,
       starCount: null,
-    }
+    };
   },
   async mounted() {
-    this.activeVersion = this.getVersion()
+    this.activeVersion = this.getVersion();
     try {
-      const responses = await Promise.all([fetch(this.apiUrl), fetch(`${this.apiUrl}/releases`)])
-      this.starCount = (await responses[0].json()).stargazers_count
-      const releaseResponse = await responses[1].json()
+      const responses = await Promise.all([
+        fetch(this.apiUrl),
+        fetch(`${this.apiUrl}/releases`),
+      ]);
+      this.starCount = (await responses[0].json()).stargazers_count;
+      const releaseResponse = await responses[1].json();
       this.release = {
         tag: releaseResponse[0].tag_name,
         url: releaseResponse[0].html_url,
-      }
+      };
     } catch (ex) {}
   },
   methods: {
     onMenuBtnClick() {
-      bus.$emit('menuClicked');
+      bus.$emit("menuClicked");
     },
 
     onVersionChange() {
-      this.$emit('version_change', this.activeVersion)
+      this.$emit("version_change", this.activeVersion);
     },
 
     getVersion() {
-      const currentUrl = this.$route.path
-      if (currentUrl.indexOf('v1') >= 0 && currentUrl.indexOf('v2') < 0) {
-        return 1
-      } else if (currentUrl.indexOf('v2') >= 0 && currentUrl.indexOf('v3') < 0) {
-        return 2
+      const currentUrl = this.$route.path;
+      if (currentUrl.indexOf("v1") >= 0 && currentUrl.indexOf("v2") < 0) {
+        return 1;
+      } else if (
+        currentUrl.indexOf("v2") >= 0 &&
+        currentUrl.indexOf("v3") < 0
+      ) {
+        return 2;
       }
-      return 3
+      return 3;
     },
   },
-}
+};
 </script>
 <style lang="scss" scoped>
 .b-menu {
@@ -116,15 +136,15 @@ export default {
   z-index: 1001;
   top: 0;
 
-  &__left{
-    &__icon{
-      img{
+  &__left {
+    &__icon {
+      img {
         height: 22px;
       }
     }
 
-    &__hamburger{
-       background-color: transparent;
+    &__hamburger {
+      background-color: transparent;
       outline: none;
       border: 0;
       color: white;
@@ -133,14 +153,14 @@ export default {
     }
 
     /* for bigger devices */
-    @media (min-width: 768px){
-      &__icon{
-        img{
+    @media (min-width: 768px) {
+      &__icon {
+        img {
           height: 30px;
         }
       }
 
-      &__hamburger{
+      &__hamburger {
         display: none;
       }
     }
@@ -151,13 +171,13 @@ a {
   color: var(--primary-contrast-color);
 }
 
-.b-menu__github-info{
+.b-menu__github-info {
   justify-content: flex-end;
 
-  &__item{
-    @media (max-width: 576px){
-      &.hide-on-mobile{
-        display:none;
+  &__item {
+    @media (max-width: 576px) {
+      &.hide-on-mobile {
+        display: none;
       }
     }
   }
@@ -183,7 +203,7 @@ a {
   border-radius: 4px;
 }
 .star-count:before {
-  content: '';
+  content: "";
   position: absolute;
   display: inline-block;
   width: 0;

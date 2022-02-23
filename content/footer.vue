@@ -1,18 +1,21 @@
 <template>
   <div class="b-footer row">
-    <div class="col-sm-12 col-lg-8">
-      
-    </div>
+    <div class="col-sm-12 col-lg-8"></div>
     <div class="col-sm-12 col-lg-4">
       Created with
-      <i class="fas fa-heart" style="color: red;"></i> by
-      <a style="color: inherit;" target="_blank" href="https://ujjwalguptaofficial.github.io/">Ujjwal Gupta</a>
+      <i class="fas fa-heart"></i> by
+      <a
+        style="color: inherit"
+        target="_blank"
+        href="https://ujjwalguptaofficial.github.io/"
+        >Ujjwal Gupta</a
+      >
     </div>
   </div>
 </template>
 
 <script>
-export default {}
+export default {};
 </script>
 
 <style lang="scss">
