@@ -57,7 +57,7 @@ Let's create a component for our counter app. Create a file - `counter.mahal`
 
 <script>
 import { Component, Reactive } from "mahal";
-export class Main {
+export default class extends Component{
 
   @Reactive
   count = 0;
@@ -76,11 +76,34 @@ The above component -
 2. Contains a button which will call method `incrementCount` on click.
 3. It uses `Reactive` decorator which makes the `count` variable reactive. It means if you will change the value of `count` - automatically it will be updated in UI.
 
+<br>
 Let's use this `counter` component now. Open `app.mahal` and add this component as children.
 
 ```
+<html>
 
+<div>
+  <Count />
+</div>
+
+</html>
+
+<script>
+import { Component, Reactive, Children } from "mahal";
+import Count from "@/components/count.mahal";
+
+@Children({
+  Count
+})
+export default class extends Component {
+
+   
+}
+</script>
 ```
+
+That's it and now `Count` component will be rendered as children of `App` Component.
+
 
 We hope you are able to understand this tutorial. Now let's make our `mahal (palace)` and show it to world. 
 

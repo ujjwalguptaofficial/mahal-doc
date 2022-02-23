@@ -21,7 +21,7 @@ import {Component, Prop } from "mahal"
 
 export default class NameComponent extends Component {
 
-    @Prop
+    @Prop()
     name;
 }
 </script>
@@ -51,3 +51,8 @@ export default class MainComponent extends Component {
 </script>
 ```
 
+## Options
+
+Prop have following options - 
+
+1. type - accepts data type of the prop. When provided it checks the provided data type.

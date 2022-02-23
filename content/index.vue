@@ -2,21 +2,21 @@
   <div class="row">
     <div class="col width-full">
       <div id="divLogoContainer">
-        <div class="ml-20px">
+        <div class="ml-20px" style="font-size: 150px">
           <img
             class="responsive-img"
-            src="/img/logo.png"
+            src="/img/logo_1.png"
             alt="JsStore logo"
             style="width: 200px"
-          />
+          />ahal
         </div>
       </div>
-      <div id="divStyle"></div>
+      <div v-if="false" id="divStyle"></div>
     </div>
     <div sm12 offset-md1 md10 offset-xl-2 xl8 class="margin-top-40px">
       <div id="divOverview">
-        <h3>Execute Database operation in browsers with JsStore.</h3>
-        <div>Simple, modern front end framework.</div>
+        <h3>Simple, modern front end framework.</h3>
+        <!-- <div>Simple, modern front end framework.</div> -->
       </div>
       <div class="row content-center mt-20px">
         <a class="btn primary mr-10px x-big ripple" href="docs/get-started">
@@ -74,8 +74,7 @@ export default {
         {
           hid: "description",
           name: "description",
-          content:
-            "Simple, modern front end framework.",
+          content: "Simple, modern front end framework.",
         },
       ],
     };
@@ -92,8 +91,7 @@ export default {
       },
       {
         title: "Better documenting",
-        subTitle:
-          "Document your component with yml syntax.",
+        subTitle: "Document your component with yml syntax.",
       },
       {
         title: "Two way binding",
@@ -119,7 +117,7 @@ export default {
   margin-right: 10px;
 }
 #divLogoContainer {
-  position: absolute;
+  // position: absolute;
   width: 100%;
   background-color: var(--primary-color);
   text-align: center;
@@ -153,21 +151,6 @@ export default {
 #divLinkGroup {
   text-align: center;
   margin-top: 30px;
-}
-
-.frameworks {
-  margin-top: 20px;
-  //   img {
-  //     height: 80px;
-  //   }
-
-  .vue {
-    img {
-      width: 40px;
-      height: auto;
-    }
-    margin-right: 20px;
-  }
 }
 
 .features__item {
