@@ -93,5 +93,8 @@ export default {
   padding: 5px;
   margin-bottom: -30px;
   text-align: right;
+  display: inline-block;
+  width: 80px;
+  align-self: flex-end;
 }
 </style>

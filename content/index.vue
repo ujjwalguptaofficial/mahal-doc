@@ -2,13 +2,13 @@
   <div class="row">
     <div class="col width-full">
       <div id="divLogoContainer">
-        <div class="ml-20px" style="font-size: 150px">
+        <div class="ml-20px row" style="font-size: 100px">
           <img
             class="responsive-img"
             :src="'logo_1.png' | imgPath"
             alt="logo"
-            style="width: 200px"
-          />ahal
+          />
+          <div>Mahal</div>
         </div>
       </div>
       <div v-if="false" id="divStyle"></div>
@@ -126,10 +126,19 @@ export default {
 #divLogoContainer {
   // position: absolute;
   width: 100%;
-  background-color: var(--primary-color);
+  // background-color: var(--primary-color);
   text-align: center;
-  color: white;
+  color: black;
   z-index: 1;
+  display: flex;
+  justify-content: center;
+  div {
+    align-items: center;
+  }
+  img {
+    width: 200px;
+    padding: 20px;
+  }
 }
 
 #divStyle {

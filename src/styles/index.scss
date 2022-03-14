@@ -44,6 +44,9 @@ a {
 
 pre {
   margin: 2rem 0;
+  display: flex;
+    width: 100%;
+    flex-direction: column;
 }
 
 pre,
@@ -63,7 +66,7 @@ pre code {
 }
 
 code {
-  background: #e6e0d7;
+  background: #d0d6d6 !important;
   padding: 2px 10px;
 }
 
