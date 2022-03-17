@@ -15,6 +15,8 @@ Mahal is a hindi word which means palace.
 
 **In this Get Started tutorial - we will learn about how we can create a simple counter app.**
 
+You can download the code of this tutorial from - [https://github.com/ujjwalguptaofficial/mahal-examples](https://github.com/ujjwalguptaofficial/mahal-examples)
+
 ## Installation
 
 mahal provides **mahal-creator** for initializing the project and help you with the development.

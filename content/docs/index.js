@@ -89,4 +89,26 @@ module.exports = [
       }
     ]
   },
+  {
+    text: 'Store',
+    url: 'store',
+    children: [
+      {
+        text: 'State',
+        url: 'state'
+      },
+      {
+        text: 'Mutation',
+        url: 'mutation'
+      },
+      {
+        text: 'Expression',
+        url: 'expression'
+      },
+      {
+        text: 'Task',
+        url: 'task'
+      },
+    ]
+  }
 ]
