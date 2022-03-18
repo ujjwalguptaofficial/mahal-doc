@@ -15,7 +15,7 @@ const host = argv.hostname || process.env.HOST || process.env.npm_package_config
 module.exports = {
   target: 'static',
   router: {
-    base: '/mahal-doc/',
+    // base: '/mahal-doc/',
   },
   srcDir: path.join(__dirname),
   dir: {
