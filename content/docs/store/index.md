@@ -115,7 +115,7 @@ export default class extends Component {
 
 mahal-store provides following decorators as hooks to help you access the store in easiest way - 
 
-* [State](/doc/store/state)
-* [Mutation](/doc/store/mutation)
-* [Task](/doc/store/task)
-* [Expression](/doc/store/expression)
+* [State](/docs/store/state)
+* [Mutation](/docs/store/mutation)
+* [Task](/docs/store/task)
+* [Expression](/docs/store/expression)

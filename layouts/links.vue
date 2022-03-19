@@ -6,7 +6,7 @@
         :class="{
           'b-tutorial__links__item--active': isActiveUrl(link),
         }"
-        :href="removeSlash(url(link, relative))"
+        :href="url(link, relative)"
       >
         <template v-if="link.children">
           <i v-if="index === activeUrlIndex" class="fas fa-chevron-down"></i>

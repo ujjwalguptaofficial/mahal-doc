@@ -27,7 +27,7 @@ Install the mahal package via npm
 npm i mahal-creator -g
 ```
 
-**Note-** If the installation fails - try with sudo.
+**Note-** If the installation fails - try with `sudo`.
 
 ## Setup
 
@@ -45,6 +45,7 @@ A Component is reusable piece of UI code and acts as buliding block for your app
 2. Script - javascript code for handling logic
 3. Style - css code for styling the UI.
 
+<br>
 Let's create a component for our counter app. Create a file - `counter.mahal`
 
 ```
