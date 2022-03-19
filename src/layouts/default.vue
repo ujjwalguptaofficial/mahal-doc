@@ -12,7 +12,7 @@ import "@/styles/index.scss";
 import Menu from "~/content/menu.vue";
 import AppFooter from "~/content/footer.vue";
 Vue.filter("imgPath", (val) => {
-  return "img/" + val;
+  return "/img/" + val;
 });
 
 export default {

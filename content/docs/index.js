@@ -110,5 +110,22 @@ module.exports = [
         url: 'task'
       },
     ]
+  }, {
+    url: 'router',
+    text: 'Router',
+    children: [
+      {
+        text: 'Routes',
+        url: 'routes'
+      },
+      {
+        text: 'Inside Component',
+        url: 'inside-component'
+      },
+      {
+        text: 'Route To',
+        url: 'route-to'
+      },
+    ]
   }
 ]

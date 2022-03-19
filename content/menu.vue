@@ -13,7 +13,7 @@
       </button>
       <a
         class="row b-menu__left__icon content-v-center"
-        href=""
+        href="/"
         title="Mahal Index Page"
       >
         <img :src="'logo_1.png' | imgPath" alt="mahal Logo" />

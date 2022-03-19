@@ -58,9 +58,7 @@
             :key="item.title"
           >
             <h4 class="div-header">{{ item.title }}</h4>
-            <span class="div-body">
-              {{ item.subTitle }}
-            </span>
+            <span class="div-body" v-html="item.subTitle"> </span>
           </div>
         </div>
       </div>
@@ -110,7 +108,7 @@ export default {
       },
       {
         title: "Editor support",
-        subTitle: "mahal-language-tool plugin for vscode",
+        subTitle: `<a href="https://github.com/ujjwalguptaofficial/mahal-language-tool">mahal-language-tool</a> plugin for vscode`,
       },
     ];
   },
