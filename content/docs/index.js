@@ -126,6 +126,10 @@ module.exports = [
         text: 'Route To',
         url: 'route-to'
       },
+      {
+        text: 'Lifecycle',
+        url: 'lifecycle'
+      },
     ]
   }
 ]
