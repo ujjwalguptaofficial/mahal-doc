@@ -17,25 +17,24 @@ Mahal is a hindi word which means palace.
 
 You can download the code of this tutorial from - [https://github.com/ujjwalguptaofficial/mahal-examples](https://github.com/ujjwalguptaofficial/mahal-examples)
 
-## Installation
-
-mahal provides **mahal-creator** for initializing the project and help you with the development.
-
-Install the mahal package via npm
-
-```bash
-npm i mahal-creator -g
-```
-
-**Note-** If the installation fails - try with `sudo`.
-
 ## Setup
 
-Once `mahal-creator` is installed. Use this command to initiate the project - 
+mahal provides [**mahal-creator**](https://github.com/ujjwalguptaofficial/mahal-creator) for initializing the project and help you with the development.
+
+Let's initiate a new project
+
+```bash
+npx mahal-creator init
+```
+
+once the project is successfully initiated, run these command -
 
 ```
-mahal-creator init
+cd <project name>
+npm run dev
 ```
+
+this wil start the development server 
 
 ### Component
 
