@@ -1,10 +1,12 @@
 ---
 Title: 'Router Lifecycle'
 Keywords: 'router, mahal-router, lifecycle'
-Description: 'mahal provides mahal-router for developing router based app.'
+Description: 'The lifecycle event can be used to control router navigation or know different router actions.'
 ---
 
 # Router Lifecycle
+
+The lifecycle event can be used to control router navigation or know different router actions.
 
 Different router lifecycle are - 
 

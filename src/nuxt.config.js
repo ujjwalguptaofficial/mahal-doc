@@ -42,7 +42,7 @@ module.exports = {
     meta: [
       {
         name: 'theme-color',
-        content: '#42a5f5',
+        content: '#ffffff',
       },
       {
         name: 'robots',
