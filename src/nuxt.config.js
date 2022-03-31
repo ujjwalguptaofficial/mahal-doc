@@ -38,7 +38,7 @@ module.exports = {
     dir: './build',
   },
   head: {
-    title: 'Mahal - Framework for building UI.',
+    title: 'Mahal - Simple, modern web application framework for UI development.',
     meta: [
       {
         name: 'theme-color',
@@ -75,6 +75,44 @@ module.exports = {
         name: 'twitter:creator',
         content: '@ujjwal_kr_gupta',
       },
+      {
+        property: "og:title",
+        content: "Mahal - Simple, modern web application framework for UI development."
+      }, {
+        property: "og:type",
+        content: "Javascript framework"
+      }, {
+        property: "og:url",
+        content: "https://mahaljs.com/"
+      }, {
+        property: "og:site_name",
+        content: "Mahal documentation"
+      }, {
+        property: "og:description",
+        content: "Simple, modern web application framework for UI development."
+      },
+      {
+        property: "og:image",
+        content: "/img/logo.png"
+        // content: "/img/JsStore_1200_630.png"
+      },
+      {
+        property: "og:image",
+        // content: "/img/jsStore_500_500.png"
+        content: "/img/logo.png"
+
+      },
+      {
+        name: "twitter:title",
+        content: "Mahal - Simple, modern web application framework for UI development."
+      }, {
+        name: "twitter:description",
+        content: "Mahal is a javascript framework for UI development. It uses modern approach and works without virtual document."
+      }, {
+        name: "twitter:image",
+        // content: "http://jsstore.net/img/JsStore_1200_630.png"
+        content: "/img/logo.png"
+      }
     ],
     link: [
       {

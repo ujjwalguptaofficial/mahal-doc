@@ -16,7 +16,7 @@
         href="/"
         title="Mahal Index Page"
       >
-        <img :src="'logo_1.png' | imgPath" alt="mahal Logo" />
+        <img :src="'logo.png' | imgPath" alt="mahal Logo" />
         <span class="ml-10px">Mahal</span>
       </a>
     </div>

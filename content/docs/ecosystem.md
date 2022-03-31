@@ -6,7 +6,7 @@ Description: 'Ecosystem available for mahal'
 
 # Ecosystem
 
-Mahal officialy provides following library or tools to help you with the development - 
+Mahal officially provides following library or tools to help you with the development - 
 
 * [mahal-creator](https://github.com/ujjwalguptaofficial/mahal-creator)
 * [mahal-store](https://github.com/ujjwalguptaofficial/mahal-store)

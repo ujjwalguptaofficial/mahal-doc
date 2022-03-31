@@ -31,3 +31,40 @@ export default class MainComponent extends Component {
 }
 </script>
 ```
+
+## Limitation
+
+There are few limitation to reactivity - 
+
+### 1. Object inside array
+
+Object inside array are not tracked due to performance reasons.
+
+```
+import {Component, Reactive } from "mahal"
+export default class MainComponent extends Component {
+
+    @Reactive
+    users = [{
+        name:'ujjwal',
+        gender:'male'
+    }]
+
+    // Invalid
+    changeName(){
+        // won't work
+        this.users[0].name = 'batman'; 
+    }
+
+    // valid
+    changeNameByReplacingArray(){
+        this.users[0] = {
+            ...this.users[0],
+            ...{
+                name: 'batman'
+            }
+        }
+    }
+}
+</script>
+```

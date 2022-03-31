@@ -5,7 +5,7 @@
         <div class="ml-20px row" style="font-size: 100px">
           <img
             class="responsive-img"
-            :src="'logo_1.png' | imgPath"
+            :src="'logo.png' | imgPath"
             alt="logo"
           />
           <div>Mahal</div>
