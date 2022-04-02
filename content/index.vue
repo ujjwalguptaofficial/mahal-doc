@@ -79,7 +79,7 @@ export default {
         {
           hid: "description",
           name: "description",
-          content: "Mahal is a javascript framework for UI development. It uses modern approach and works without virtual document.",
+          content: "Mahal is a javascript framework for UI development. It uses modern approach and works without virtual DOM.",
         },
       ],
     };

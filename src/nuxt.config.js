@@ -89,7 +89,7 @@ module.exports = {
         content: "Mahal documentation"
       }, {
         property: "og:description",
-        content: "Mahal is a javascript framework for UI development. It uses modern approach and works without virtual document."
+        content: "Mahal is a javascript framework for UI development. It uses modern approach and works without virtual DOM."
       },
       {
         property: "og:image",
@@ -107,7 +107,7 @@ module.exports = {
         content: "Mahal - Simple, modern web application framework for UI development."
       }, {
         name: "twitter:description",
-        content: "Mahal is a javascript framework for UI development. It uses modern approach and works without virtual document."
+        content: "Mahal is a javascript framework for UI development. It uses modern approach and works without virtual DOM."
       }, {
         name: "twitter:image",
         // content: "http://jsstore.net/img/JsStore_1200_630.png"
