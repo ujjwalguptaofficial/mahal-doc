@@ -74,12 +74,12 @@ export default {
         {
           hid: "keywords",
           name: "keywords",
-          content: "mahal, javascript, frontend, framework, modern",
+          content: "mahal, javascript, frontend, framework, typescript",
         },
         {
           hid: "description",
           name: "description",
-          content: "Simple, modern front end framework.",
+          content: "Mahal is a javascript framework for UI development. It uses modern approach and works without virtual document.",
         },
       ],
     };

@@ -89,7 +89,7 @@ module.exports = {
         content: "Mahal documentation"
       }, {
         property: "og:description",
-        content: "Simple, modern web application framework for UI development."
+        content: "Mahal is a javascript framework for UI development. It uses modern approach and works without virtual document."
       },
       {
         property: "og:image",
