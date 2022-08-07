@@ -6,8 +6,8 @@ Description: 'Get started with mahal'
 
 # Get Started
 
-<iframe height="443" src="https://www.youtube.com/embed/6S9iMpv57Bg?list=PLdsO1qVTxvBVCBkNR-stLZGhEtCRfJQhh" title="Mahal.js Introduction" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
+<iframe width="100%" height="443" src="https://www.youtube.com/embed/6S9iMpv57Bg?list=PLdsO1qVTxvBVCBkNR-stLZGhEtCRfJQhh" title="Mahal.js Introduction" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<br><br>
 The `mahal` is a javascript framework for UI development. It is similar to react or vue but without virtual DOM. 
 
 <div class="highlight">
