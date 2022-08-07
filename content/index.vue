@@ -91,8 +91,8 @@ export default {
         subTitle: "Less memory, No diff calculation. Thus faster.",
       },
       {
-        title: "Powerful but small in size",
-        subTitle: "21kb minified",
+        title: "Small in size but powerful",
+        subTitle: "7kb minified + gzipped",
       },
       {
         title: "Better documenting",
@@ -100,7 +100,7 @@ export default {
       },
       {
         title: "Two way binding",
-        subTitle: "Make your component reactive",
+        subTitle: "Truly reactive from script side and UI side both",
       },
       {
         title: "TypeScript Support",
