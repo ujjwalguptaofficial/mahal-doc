@@ -6,12 +6,15 @@ Description: 'Get started with mahal'
 
 # Get Started
 
+<iframe width="1048" height="443" src="https://www.youtube.com/embed/6S9iMpv57Bg?list=PLdsO1qVTxvBVCBkNR-stLZGhEtCRfJQhh" title="Mahal.js Introduction" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 The `mahal` is a javascript framework for UI development. It is similar to react or vue but without virtual DOM. 
 
 <div class="highlight">
 Mahal is a hindi word which means palace.
 </div>
 <br>
+
 
 **In this Get Started tutorial - we will learn about how we can create a simple counter app.**
 
