@@ -69,7 +69,9 @@ The `:` is known as `bind`. So when pronouncing you can call - **bind name attri
 
 ## onInit
 
-every component has `onInit` method which is called just after the constructor. You can use the `onInit` method to subscribe to different events.
+every component has `onInit` method which is called just after the constructor. The difference between constructor and onInit is  - `onInit` is called by mahal framework - thus value of `this` is proxy object, so if you call any method or change state then reactivity will be triggered.
+
+It is recommended to use `onInit` method to call any methods at the start. Alternatively you can also use different lifecycle event.
 
 ```
 <html>
@@ -134,6 +136,19 @@ export default class MainComponent extends Component {
 </script>
 
 ```
+
+### Register component globally
+
+You can also register a component globally which will remove the necessity to import components at every place.
+
+```
+import Home from "./components/home.mahal"
+
+export const app = new Mahal(Main, document.querySelector('#app'));
+// register component globally
+app.extend.component("Home", Home);
+```
+
 
 
 
