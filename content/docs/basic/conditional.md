@@ -1,7 +1,7 @@
 ---
-Title: 'Component'
-Keywords: 'mahal'
-Description: 'Get started with mahal'
+Title: 'Conditional - if, else'
+Keywords: 'if, else, condition, mahal'
+Description: 'The directive if is used to render an element conditionally. The element will be rendered only when the expression is truthy.'
 ---
 
 # Conditional

@@ -1,7 +1,7 @@
 ---
-Title: 'Asynchronous Component'
-Keywords: 'mahal'
-Description: 'Get started with mahal'
+Title: 'Code Splitting & Lazy loading'
+Keywords: 'Code splitting, Lazy load, mahal'
+Description: 'Code splitting allows you to remove a particular piece of code or component into seperate bundle out of main bundle.'
 ---
 
 # Code Splitting
@@ -9,7 +9,7 @@ Description: 'Get started with mahal'
 Code splitting allows you to remove a particular piece of code or component into seperate bundle out of main bundle. This increase your app load time as your bundle will be loaded later once the main bundle is loaded.
 
 <div class="highlight">
-Loading a component asynchronously will load the component in run time, so not being part of your parent component script bundle. This reduce your bundle size.
+Loading a component asynchronously will load the component in run time by doing an ajax request, so not being part of your parent component script bundle. This reduce your bundle size.
 </div>
 <br>
 

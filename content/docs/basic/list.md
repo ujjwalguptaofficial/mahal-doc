@@ -1,14 +1,12 @@
 ---
-Title: 'Component'
-Keywords: 'mahal'
+Title: 'List'
+Keywords: 'list, for, loop, mahal'
 Description: 'Get started with mahal'
 ---
 
 # List
 
-## for
-
-we can use `:for` to render the items from array.
+Mahal provides `for` directive which can be used to render list.
 
 ```
 <html>
@@ -29,7 +27,7 @@ export default class extends Component {
 </script>
 ```
 
-**for with object**
+## for with object
 
 Similar to array we can loop through object property. In case of object the first argument is value and second argument is key.
 

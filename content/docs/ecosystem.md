@@ -1,6 +1,6 @@
 ---
 Title: 'Ecosystem'
-Keywords: 'router, mahal-router, Ecosystem'
+Keywords: 'router, mahal-router, mahal-store, ecosystem'
 Description: 'Ecosystem available for mahal'
 ---
 

@@ -1,12 +1,12 @@
 ---
 Title: 'Dynamic Component'
-Keywords: 'mahal'
-Description: 'Get started with mahal'
+Keywords: 'Dynamic, component , in-place, mahal'
+Description: 'Mahal provides a special component **in-place** which can be used for rendering component dynamically'
 ---
 
 # Dynamic Component
 
-Mahal provides a special component **in-place** which can be used for rendering dynamic component.
+Mahal provides a special component **in-place** which can be used for rendering component dynamically.
 
 ```
 <html>

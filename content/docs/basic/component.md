@@ -1,7 +1,7 @@
 ---
 Title: 'Component'
-Keywords: 'mahal'
-Description: 'Get started with mahal'
+Keywords: 'mahal, component'
+Description: 'A Component is reusable piece of UI code and acts as buliding block for your app'
 ---
 
 # Component

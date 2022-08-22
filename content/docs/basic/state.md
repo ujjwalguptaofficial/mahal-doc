@@ -1,7 +1,7 @@
 ---
 Title: 'Component State'
-Keywords: 'mahal'
-Description: 'Get started with mahal'
+Keywords: 'state, setState, component, mahal'
+Description: 'A state is a property inside the component class. A state is accessible in UI section.'
 ---
 
 # State

@@ -1,6 +1,6 @@
 ---
-Title: 'Component'
-Keywords: 'mahal'
+Title: 'Slot'
+Keywords: 'slot, mahal'
 Description: 'Get started with mahal'
 ---
 

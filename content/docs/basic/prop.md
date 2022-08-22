@@ -1,7 +1,7 @@
 ---
-Title: 'Component'
-Keywords: 'mahal'
-Description: 'Get started with mahal'
+Title: 'Component Props'
+Keywords: 'props, component, mahal'
+Description: 'Props (properties) can be used to pass value from one component to another component'
 ---
 
 # Props

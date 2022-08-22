@@ -1,14 +1,12 @@
 ---
-Title: 'Component'
-Keywords: 'mahal'
-Description: 'Get started with mahal'
+Title: 'Formatter'
+Keywords: 'formatter, component, mahal'
+Description: 'Formatter can be used to convert one value to another value in UI'
 ---
 
 # Formatter
 
-Formatter can be used to convert one value to another value. 
-
-A formatter is nothing but a method which can be used in the UI code. A pipe symbol is used to use the formatter.
+A formatter is a method can be used to convert one value to another value in UI using **pipe symbol**. .
 
 A decorator `Formatter` is used to declare a method formatter. A formatter method accepts a parameter which is converted into some other format or value.
 

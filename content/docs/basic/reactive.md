@@ -1,16 +1,16 @@
 ---
 Title: 'Reactive'
-Keywords: 'reactive, mahal'
-Description: 'Mahal provides Reactive decorator which can be used for two way binding.'
+Keywords: 'reactive, state, mahal'
+Description: 'A state can be made reactive by using a decorator - `Reactive`. This allows to change the state value directly.'
 ---
 
 # Reactive
 
-By default a component variable are not reactive which means if you will change the value - it won't be updated in the UI.
+By default a component state are not reactive which means if you will change the value - it won't be updated in UI.
 
-You can use `setState` method to trigger the update but this increase the responsibility and code size ofcourse.
+You can use `setState` method to trigger the update but this is not clean, increase the responsibility and code size ofcourse.
 
-A variable can be made reactive by using a decorator - `Reactive`
+A state can be made reactive by using a decorator - `Reactive`. This allows to change the state value directly.
 
 ```
 <html>

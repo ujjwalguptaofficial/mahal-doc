@@ -1,6 +1,6 @@
 ---
 Title: 'Get started'
-Keywords: 'mahal'
+Keywords: 'get started, mahal'
 Description: 'Get started with mahal'
 ---
 

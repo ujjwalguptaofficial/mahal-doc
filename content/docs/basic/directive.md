@@ -1,6 +1,6 @@
 ---
 Title: 'Directive'
-Keywords: 'mahal'
+Keywords: 'directive, element, mahal'
 Description: 'Directive are reusable method which can be attached on element for low level access to element.'
 ---
 

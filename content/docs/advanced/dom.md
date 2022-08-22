@@ -1,7 +1,7 @@
 ---
 Title: 'Dom'
-Keywords: 'mahal'
-Description: 'Get started with mahal'
+Keywords: 'dom, ref, find, findAll, mahal'
+Description: 'The component DOM is available at component `element` property.'
 ---
 
 # DOM

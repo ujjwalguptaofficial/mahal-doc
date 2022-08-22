@@ -1,7 +1,7 @@
 ---
-Title: 'Component'
-Keywords: 'mahal'
-Description: 'Get started with mahal'
+Title: 'Conditional class'
+Keywords: 'class, expression, mahal'
+Description: 'Classes can be added or removed based on some condition'
 ---
 
 # Conditional class

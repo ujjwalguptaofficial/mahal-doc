@@ -1,7 +1,7 @@
 ---
 Title: 'Component Lifecycle'
-Keywords: 'mahal'
-Description: 'Get started with mahal'
+Keywords: 'lifecycle, component, mahal'
+Description: 'A component have different lifecycle and an event is emitted for each lifecycle'
 ---
 
 # Component LifeCycle
@@ -28,7 +28,7 @@ export default class MainComponent extends Component {
 
 ### 2. Mount
 
-The `mount` lifecycle event occurs after the element is rendered.
+The `mount` lifecycle event occurs after the component is rendered (element has been inserted into DOM and ui is visible).
 
 ```
 import {Component} from "mahal"
@@ -46,7 +46,7 @@ export default class MainComponent extends Component {
 
 ### 3. Update
 
-The `update` lifecycle event occurs whenever the UI is updated. This occurs multiple times as UI can be updated multiple times with change in the component logic.
+The `update` lifecycle event occurs whenever the UI is updated. This occurs multiple times as UI can be updated multiple times with change in the component state.
 
 
 ```

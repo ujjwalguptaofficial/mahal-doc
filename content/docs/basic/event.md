@@ -1,7 +1,7 @@
 ---
 Title: 'Event in Component'
-Keywords: 'mahal'
-Description: 'Get started with mahal'
+Keywords: 'event, component, mahal'
+Description: 'In mahal - you can listen to an event by using `on:<eventname>` or `@<eventName>` syntax'
 ---
 
 # Event
@@ -12,6 +12,7 @@ In mahal - you can listen to an event by using `on:<eventname>` or `@<eventName>
 <html>
     <div>My name is {{name}}</div>
     <button on:click="changeName">change my name</button>
+    <button @click="changeName">change my name</button>
 </html>
 <script>
 import {Component, Reactive } from "mahal"
@@ -26,7 +27,7 @@ export default class MainComponent extends Component {
 </script>
 ```
 
-Mahal supports all html events like - `click`, `focus` etc
+Mahal supports all html events like - `click`, `focus` etc . It internally uses `addEventListener`.
 
 ## Component event
 

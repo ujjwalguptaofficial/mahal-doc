@@ -1,7 +1,7 @@
 ---
 Title: 'Fragment'
-Keywords: 'mahal'
-Description: 'Get started with mahal'
+Keywords: 'fragment, mahal'
+Description: '`fragment` is a special component, which lets you group list of element without adding extra nodes.'
 ---
 
 # Fragment

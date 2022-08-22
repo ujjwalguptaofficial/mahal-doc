@@ -1,12 +1,14 @@
 ---
-Title: 'Component'
-Keywords: 'mahal'
-Description: 'Get started with mahal'
+Title: 'Model - two way binding'
+Keywords: 'model, two way binding, mahal'
+Description: 'A **model** is a special directive which can be used for two way binding'
 ---
 
 # Model
 
-A Model is a directive which can be used as shorthand for input event. It is a two way binding which means - if you change the value in the code then UI will be automatically updated and vice versa.
+A **model** is a special directive which can be used for two way binding, which means - if you change the value in the code then UI will be automatically updated and vice versa.
+
+👉 A model is shorthand for `input` event.
 
 ```
 <html>

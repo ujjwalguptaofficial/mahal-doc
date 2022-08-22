@@ -1,7 +1,7 @@
 ---
-Title: 'Computed'
-Keywords: 'mahal, computed, state, component'
-Description: 'A computed is derived property from reactive property. The computed property is automatically evaluated when the target reactive property changes.'
+Title: 'Component'
+Keywords: 'mahal'
+Description: 'Get started with mahal'
 ---
 
 # Computed
