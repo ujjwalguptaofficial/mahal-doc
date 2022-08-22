@@ -53,12 +53,16 @@ module.exports = [
         url: 'conditional-class',
       },
       {
+        text: 'Formatter',
+        url: 'formatter',
+      },
+      {
         text: 'Directive',
         url: 'directive',
       },
       {
-        text: 'Formatter',
-        url: 'formatter',
+        text: 'Dependency injection',
+        url: 'dependency-injection',
       }
     ]
   },

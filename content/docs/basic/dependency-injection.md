@@ -1,36 +1,36 @@
 ---
-Title: 'Component'
-Keywords: 'mahal'
-Description: 'Get started with mahal'
+Title: 'Dependency injection'
+Keywords: 'dependency injection, component, mahal'
+Description: 'You can pass any dependency to `Component` using `global` property of app instance.'
 ---
 
-# Computed
+# Dependency injection
 
-A computed is derived property from reactive property. The computed property is automatically evaluated when the target reactive property changes.
-
-For making a property `computed` you will have to use decorator - `Computed` which will take the list of reactive props to depend on. 
-
-A simple example of computed property is evaluating full name from first name and last name. 
+You can pass any dependency to `Component` using `global` property of app instance.
 
 ```
-<html>
-    <div>My name is {{fullName}}</div>
-</html>
-<script>
-import { Component, Computed, Reactive } from "mahal";
+import { Mahal } from "mahal";
+import Main from "./components/main.mahal";
 
-export default class extends Component {
+export const app = new Mahal(Main, '#app');
 
-    @Reactive
-    firstName = "ujjwal";
+// inject dependency `name`
+app.global.name = 'ujjwal gupta';
+app.global.appVersion = '1.0.0';
 
-    @Reactive
-    lastName = "gupta";
+app.create();
+```
 
-    @Computed("firstName", "lastName")
-    get fullName() {
-        return this.firstName + " " + this.lastName;
+The injected dependency can be accessed using `global` property of Component - 
+
+```
+import {Component} from "mahal"
+
+export default class MainComponent extends Component {
+
+    get name(){
+        return this.global.name;
     }
 }
-</script>
+
 ```
