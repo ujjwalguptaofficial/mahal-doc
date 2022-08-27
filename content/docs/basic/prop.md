@@ -1,14 +1,14 @@
 ---
 Title: 'Component Props'
-Keywords: 'props, component, mahal'
-Description: 'Props (properties) can be used to pass value from one component to another component'
+Keywords: 'props, input, component, mahal'
+Description: 'Props (properties) can be used to pass **input** to component.'
 ---
 
 # Props
 
-Props (properties) can be used to pass value from one component to another component. Props are reactive.
+Props (properties) can be used to pass **input** to component. Props are reactive.
 
-Let's create a component which will take the `name` from the main component and render the message.
+Let's create a component which take input `name` and render the message.
 
 create a file - `name.mahal`
 
@@ -27,10 +27,10 @@ export default class NameComponent extends Component {
 </script>
 ```
 
-In the above code - we have marked the variable `name` as Prop by using the decorator `Prop`.
+In the above code - we have marked the property `name` as Prop by using the decorator `Prop`.
 
 
-Let's use the component `Name` inside `Main` Component
+Let's use the component `Name` inside `Main` Component and pass input value name.
 
 ```
 <html>

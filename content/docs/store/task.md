@@ -19,7 +19,7 @@ The `Task` decorator can be used to map the store task.
 
 <script>
 import { Component, Computed, Reactive } from "mahal";
-import { State, Mutation, Task } from "mahal-store";
+import { State, Mutation, Task } from "@mahaljs/store";
 
 export default class extends Component {
 

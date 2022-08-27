@@ -11,7 +11,7 @@ Description: 'mahal provides mahal-router for developing router based app.'
 This is how a simple routes looks like - 
 
 ```
-import { createRoute } from "mahal-router";
+import { createRoute } from "@mahaljs/router";
 import Start from "./components/start.mahal";
 export const routes = {
     ...createRoute({
@@ -36,7 +36,7 @@ The different arguments available for `createRoute` are -
 In order to create a route with parameters - you will have to specify param in `path` using `{}` syntax.
 
 ```
-import { createRoute } from "mahal-router";
+import { createRoute } from "@mahaljs/router";
 import Start from "./components/start.mahal";
 import Start from "./components/user.mahal";
 
@@ -67,7 +67,7 @@ const userId = router.param.userId;
 A nested route is a route inside a route, which means it will work only when the particular parent route renders. A nested route can be created by specifying route definition in `children` prop of `createRoute`.
 
 ```
-import { createRoute } from "mahal-router";
+import { createRoute } from "@mahaljs/router";
 import Start from "./components/start.mahal";
 import User from "./components/user.mahal";
 import UserProfile from "./components/user_profile.mahal";

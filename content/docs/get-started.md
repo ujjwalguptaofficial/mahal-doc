@@ -27,7 +27,7 @@ mahal provides [**mahal-creator**](https://github.com/ujjwalguptaofficial/mahal-
 Let's initiate a new project
 
 ```bash
-npx mahal-creator init
+npx @mahaljs/creator init
 ```
 
 once the project is successfully initiated, run these command -

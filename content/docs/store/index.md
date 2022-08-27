@@ -1,6 +1,6 @@
 ---
 Title: 'Store'
-Keywords: 'mahal'
+Keywords: 'mahal, store, ui, framework'
 Description: 'Store are used to save state of the application which can be accessed in all components.'
 ---
 
@@ -77,7 +77,7 @@ Let's use `myStore` in our mahal app.
 ```
 import { Mahal } from "mahal";
 import Main from "./components/main.mahal";
-import MahalStore from "mahal-store";
+import MahalStore from "@mahaljs/store";
 import store from "../store";
 
 export const app = new Mahal(Main, '#app');

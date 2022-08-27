@@ -11,7 +11,7 @@ mahal provides [mahal-router](https://github.com/ujjwalguptaofficial/mahal-route
 ## Installation
 
 ```
-npm i mahal-router
+npm i @mahaljs/router
 ```
 
 ## Setup
@@ -25,7 +25,7 @@ The router needs **routes** (route information) in order to render components ba
 A simple routes looks like - 
 
 ```
-import { createRoute } from "mahal-router";
+import { createRoute } from "@mahaljs/router";
 import Start from "./components/start.mahal";
 export const routes = {
     ...createRoute({
@@ -45,7 +45,7 @@ For more information about routes, please read [routes doc](/docs/router/routes)
 A Router can be created by creating instance of `Router` class;
 
 ```
-import { Router } from "mahal-router";
+import { Router } from "@mahaljs/router";
 
 const router = new Router(routes, {
     mode: "history"
@@ -59,7 +59,7 @@ const router = new Router(routes, {
 ```
 import { Mahal } from "mahal";
 import Main from "./components/main.mahal";
-import { RouterPlugin } from "mahal-router";
+import { RouterPlugin } from "@mahaljs/router";
 import { routes } from "../routes";
 
 export const app = new Mahal(Main, '#app');

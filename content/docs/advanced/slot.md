@@ -1,7 +1,7 @@
 ---
 Title: 'Slot'
 Keywords: 'slot, mahal'
-Description: 'Get started with mahal'
+Description: 'Slot can be used for injecting content inside a component. It is an alternative of using `prop`'
 ---
 
 # Slot

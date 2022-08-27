@@ -9,6 +9,7 @@ Description: 'Ecosystem available for mahal'
 Mahal officially provides following library or tools to help you with the development - 
 
 * [mahal-creator](https://github.com/ujjwalguptaofficial/mahal-creator)
+* [mahal-util](https://github.com/ujjwalguptaofficial/mahaljs-util)
 * [mahal-store](https://github.com/ujjwalguptaofficial/mahal-store)
 * [mahal-router](https://github.com/ujjwalguptaofficial/mahal-router)
 * [mahal-test-utils](https://github.com/ujjwalguptaofficial/mahal-test-utils)

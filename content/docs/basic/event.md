@@ -1,12 +1,14 @@
 ---
 Title: 'Event in Component'
-Keywords: 'event, component, mahal'
-Description: 'In mahal - you can listen to an event by using `on:<eventname>` or `@<eventName>` syntax'
+Keywords: 'event, output, component, mahal'
+Description: 'Event allows to react and perform action when something happens'
 ---
 
 # Event
 
-In mahal - you can listen to an event by using `on:<eventname>` or `@<eventName>` syntax -
+Event allows to react and perform action when something happens. It can be considered as a way to pass output. 
+
+In mahal - you can listen to an event by using `on:<eventname>` or `@<eventName>` syntax.
 
 ```
 <html>
@@ -54,8 +56,10 @@ import {Component, Reactive } from "mahal"
 
 export default class LoginComponent extends Component{
 
+    @Reactive
     email="";
 
+    @Reactive
     password="";
 
     onEmail(value){

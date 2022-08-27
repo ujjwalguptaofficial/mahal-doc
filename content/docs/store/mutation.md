@@ -18,7 +18,7 @@ The `Mutation` decorator can be used to map the mutation value.
 
 <script>
 import { Component, Computed, Reactive } from "mahal";
-import { State, Mutation } from "mahal-store";
+import { State, Mutation } from "@mahaljs/store";
 
 export default class extends Component {
 

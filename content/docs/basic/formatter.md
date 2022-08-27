@@ -6,7 +6,7 @@ Description: 'Formatter can be used to convert one value to another value in UI'
 
 # Formatter
 
-A formatter is a method can be used to convert one value to another value in UI using **pipe symbol**. .
+A formatter is a method which can be used to format(convert one value to another value) in UI using **pipe symbol**. .
 
 A decorator `Formatter` is used to declare a method formatter. A formatter method accepts a parameter which is converted into some other format or value.
 
@@ -76,8 +76,6 @@ app.extend.formatter("dollar", (value: string) => {
     return "$" + value;
 });
 ```
-
-The formatter `toS` is available globally. It simply converts any value to string.
 
 
  

@@ -6,9 +6,9 @@ Description: 'A computed is derived property from reactive property. The compute
 
 # Computed
 
-A computed is derived property from reactive property. The computed property is automatically evaluated when the target reactive property changes.
+A computed is derived property from a property. The computed property is automatically evaluated when the target reactive property changes.
 
-For making a property `computed` you will have to use decorator - `Computed` which will take the list of reactive props to depend on. 
+For making a property `computed` you will have to use decorator - `Computed` which will take the list of props to depend on. 
 
 A simple example of computed property is evaluating full name from first name and last name. 
 
