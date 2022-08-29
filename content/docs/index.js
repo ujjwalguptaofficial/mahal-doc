@@ -84,6 +84,10 @@ module.exports = [
         url: 'dom',
       },
       {
+        text: 'Watch',
+        url: 'watch',
+      },
+      {
         text: "Dynamic Component",
         url: "dynamic-component"
       },
