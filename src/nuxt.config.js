@@ -111,7 +111,7 @@ module.exports = {
       }, {
         name: "twitter:image",
         // content: "http://jsstore.net/img/JsStore_1200_630.png"
-        content: "/img/logo_background_1200_630.png"
+        content: "/img/logo_background_500_500.png"
       }
     ],
     link: [
