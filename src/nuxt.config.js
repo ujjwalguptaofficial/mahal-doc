@@ -80,7 +80,7 @@ module.exports = {
         content: "Mahal - Simple, modern web application framework for UI development."
       }, {
         property: "og:type",
-        content: "Javascript framework"
+        content: "website"
       }, {
         property: "og:url",
         content: "https://mahaljs.com/"
@@ -93,13 +93,13 @@ module.exports = {
       },
       {
         property: "og:image",
-        content: "/img/logo.png"
+        content: "/img/logo_background_1200_630.png"
         // content: "/img/JsStore_1200_630.png"
       },
       {
         property: "og:image",
         // content: "/img/jsStore_500_500.png"
-        content: "/img/logo.png"
+        content: "/img/logo_background_500_500.png"
 
       },
       {
@@ -111,7 +111,7 @@ module.exports = {
       }, {
         name: "twitter:image",
         // content: "http://jsstore.net/img/JsStore_1200_630.png"
-        content: "/img/logo.png"
+        content: "/img/logo_background_1200_630.png"
       }
     ],
     link: [
