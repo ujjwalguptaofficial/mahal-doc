@@ -108,8 +108,14 @@ module.exports = {
       }, {
         name: "twitter:description",
         content: "Mahal is a javascript framework for UI development. It uses modern approach and works without virtual DOM."
-      }, {
+      }, 
+      {
         name: "twitter:image",
+        // content: "http://jsstore.net/img/JsStore_1200_630.png"
+        content: "/img/logo_background_500_500.png"
+      },
+      {
+        name: "twitter:image:src",
         // content: "http://jsstore.net/img/JsStore_1200_630.png"
         content: "/img/logo_background_500_500.png"
       }
