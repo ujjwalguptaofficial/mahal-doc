@@ -22,7 +22,7 @@
       class="margin-top-40px width-full"
     >
       <div id="divOverview">
-        <h3>Simple, modern web application framework for UI development.</h3>
+        <h3>Event based modern web application framework for UI development</h3>
         <!-- <div>Simple, modern front end framework.</div> -->
       </div>
       <div class="row content-center mt-20px">

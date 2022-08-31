@@ -38,7 +38,7 @@ module.exports = {
     dir: './build',
   },
   head: {
-    title: 'Mahal - Simple, modern web application framework for UI development.',
+    title: 'Mahal - Event based modern web application framework for UI development.',
     meta: [
       {
         name: 'theme-color',
@@ -77,7 +77,7 @@ module.exports = {
       },
       {
         property: "og:title",
-        content: "Mahal - Simple, modern web application framework for UI development."
+        content: "Mahal - Event based modern web application framework for UI development."
       }, {
         property: "og:type",
         content: "website"
@@ -89,7 +89,7 @@ module.exports = {
         content: "Mahal documentation"
       }, {
         property: "og:description",
-        content: "Mahal is a javascript framework for UI development. It uses modern approach and works without virtual DOM."
+        content: "Mahal is a javascript framework for UI development. It uses event based architecture and works without virtual DOM."
       },
       {
         property: "og:image",
@@ -104,11 +104,11 @@ module.exports = {
       },
       {
         name: "twitter:title",
-        content: "Mahal - Simple, modern web application framework for UI development."
+        content: "Mahal - Event based modern web application framework for UI development."
       }, {
         name: "twitter:description",
-        content: "Mahal is a javascript framework for UI development. It uses modern approach and works without virtual DOM."
-      }, 
+        content: "Mahal is a javascript framework for UI development. It uses event based architecture and works without virtual DOM."
+      },
       {
         name: "twitter:image",
         // content: "http://jsstore.net/img/JsStore_1200_630.png"
