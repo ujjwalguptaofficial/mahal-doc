@@ -115,3 +115,5 @@ We hope you are able to understand this tutorial. Now let's make our `mahal (pal
 ### Some important links
 
 - [Examples](https://github.com/ujjwalguptaofficial/mahal-examples)
+- [Why i created mahal.js](https://ujjwalkrgupta.medium.com/why-i-created-mahal-js-9141b37fc64)
+- [mahaljs official blog](https://medium.com/mahal-js)
