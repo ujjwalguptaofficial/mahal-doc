@@ -87,10 +87,10 @@ Now let's use the above component in a `MainComponent` -
     <Login on:submit="onLoginSubmit" />
 </html>
 <script>
-import {Component, Children } from "mahal"
+import {Component, children } from "mahal"
 import Login from "./login.mahal";
 
-@Children({
+@children({
     Login
 })
 export default class MainComponent extends Component {

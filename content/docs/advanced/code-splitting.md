@@ -22,9 +22,9 @@ You can use `import` method to split your component.
 </div>
 </html>
 <script>
-import { Component, Children, reactive } from "mahal"
+import { Component, children, reactive } from "mahal"
 
-@Children({
+@children({
     Btn: import('./standard_button.mahal')
 })
 export class MyComponent extends Component {
@@ -51,9 +51,9 @@ The framework provides `lazyComponent` method to convert a component into lazy.
 </div>
 </html>
 <script>
-import { Component, Children, reactive, lazyComponent } from "mahal"
+import { Component, children, reactive, lazyComponent } from "mahal"
 
-@Children({
+@children({
     Btn: lazyComponent( ()=> import('./standard_button.mahal') )
 })
 export class MyComponent extends Component {

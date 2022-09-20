@@ -94,10 +94,10 @@ Let's use this `counter` component now. Open `app.mahal` and add this component 
 </html>
 
 <script>
-import { Component, reactive, Children } from "mahal";
+import { Component, reactive, children } from "mahal";
 import Count from "@/components/count.mahal";
 
-@Children({
+@children({
   Count
 })
 export default class extends Component {

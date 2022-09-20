@@ -115,7 +115,7 @@ e.g - Let's say we have a `root` component, which wants to render the `home` com
 In order to render a component, you need to do following steps - 
 
 1. Import the component
-2. Use `Children` decorator to declare it as child.
+2. Use `children` decorator to declare it as child.
 
 
 ```
@@ -124,10 +124,10 @@ In order to render a component, you need to do following steps -
 </html>
 
 <script>
-import { Component, Children } from "mahal"
+import { Component, children } from "mahal"
 import Home from "./components/home.mahal"
 
-@Children({
+@children({
    Home
 })
 export default class MainComponent extends Component {

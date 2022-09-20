@@ -37,10 +37,10 @@ Let's use the component `Name` inside `Main` Component and pass input value name
     <Name :name="name" />
 </html>
 <script>
-import {Component, reactive, Children } from "mahal"
+import {Component, reactive, children } from "mahal"
 import Name from "./name.mahal";
 
-@Children({
+@children({
     Name:Name
 })
 export default class MainComponent extends Component {

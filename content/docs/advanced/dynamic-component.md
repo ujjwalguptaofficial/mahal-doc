@@ -16,11 +16,11 @@ Mahal provides a special component **in-place** which can be used for rendering 
 </div>
 </html>
 <script>
-import { Component, Children, reactive } from "mahal"
+import { Component, children, reactive } from "mahal"
 import Comp1 from "comp1.mahal"
 import Comp2 from "comp2.mahal"
 
-@Children({
+@children({
     Comp1, Comp2
 })
 export class MyComponent extends Component {
@@ -56,11 +56,11 @@ Let's say we have two tabs - `Tab1`, `Tab2` and we want to render related compon
 </div>
 </html>
 <script>
-import { Component, Children, reactive } from "mahal"
+import { Component, children, reactive } from "mahal"
 import Tab1Data from "comp1.mahal"
 import Tab2Data from "comp2.mahal"
 
-@Children({
+@children({
     Tab1Data, Tab2Data
 })
 export class MyComponent extends Component {
