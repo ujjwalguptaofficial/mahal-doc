@@ -1,16 +1,16 @@
 ---
-Title: 'Reactive'
+Title: 'reactive'
 Keywords: 'reactive, state, mahal'
-Description: 'A state can be made reactive by using a decorator - `Reactive`. This allows to change the state value directly.'
+Description: 'A state can be made reactive by using a decorator - `reactive`. This allows to change the state value directly.'
 ---
 
-# Reactive
+# reactive
 
 By default a component state are not reactive which means if you will change the value - it won't be updated in UI.
 
 You can use `setState` method to trigger the update but this is not clean, increase the responsibility and code size ofcourse.
 
-A state can be made reactive by using a decorator - `Reactive`. This allows to change the state value directly.
+A state can be made reactive by using a decorator - `reactive`. This allows to change the state value directly.
 
 ```
 <html>
@@ -19,10 +19,10 @@ A state can be made reactive by using a decorator - `Reactive`. This allows to c
 </html>
 
 <script>
-import {Component, Reactive } from "mahal"
+import {Component, reactive } from "mahal"
 export default class MainComponent extends Component {
 
-    @Reactive
+    @reactive
     name = "ujjwal gupta"
 
     changeName(){
@@ -41,10 +41,10 @@ There are few limitation to reactivity -
 Object inside array are not tracked due to performance reasons.
 
 ```
-import {Component, Reactive } from "mahal"
+import {Component, reactive } from "mahal"
 export default class MainComponent extends Component {
 
-    @Reactive
+    @reactive
     users = [{
         name:'ujjwal',
         gender:'male'

@@ -17,11 +17,11 @@ Mahal provides `for` directive which can be used to render list.
 </div>
 </html>
 <script>
-import { Component, Computed, Reactive } from "mahal";
+import { Component, Computed, reactive } from "mahal";
 
 export default class extends Component {
 
-   @Reactive
+   @reactive
     fruits = ["Banana", "Orange", "Apple", "Mango"];
 }
 </script>
@@ -40,11 +40,11 @@ Similar to array we can loop through object property. In case of object the firs
 </div>
 </html>
 <script>
-import { Component, Computed, Reactive } from "mahal";
+import { Component, Computed, reactive } from "mahal";
 
 export default class extends Component {
 
-   @Reactive
+   @reactive
    fruits = { 
        "Banana":5, "Orange":3, "Apple":2, "Mango":4
    };

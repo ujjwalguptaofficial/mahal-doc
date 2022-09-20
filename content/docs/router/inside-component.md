@@ -13,7 +13,7 @@ Once router is successfully integrated. `router` is available inside component a
 router is same variable which was provided while initiating the `mahal-router` in plugin. It has different props and api to help you with different scenario.
 
 ```
-import { Component, Reactive } from "mahal";
+import { Component, reactive } from "mahal";
 export default class extends Component{
 
    onInit(){

@@ -26,12 +26,12 @@ Alternatively, you can also use `Watch` decorator from [mahaljs-util](https://gi
 
 ```
 import { Component } from "mahal"
-import { Watch } from "@mahaljs/util"
+import { watch } from "@mahaljs/util"
 
 export default class MainComponent extends Component {
     name = "ujjwal gupta"
 
-    @Watch('name')
+    @watch('name')
     onNameChange(newValue, oldValue){
          
     }

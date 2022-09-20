@@ -17,14 +17,14 @@ A simple example of computed property is evaluating full name from first name an
     <div>My name is {{fullName}}</div>
 </html>
 <script>
-import { Component, Computed, Reactive } from "mahal";
+import { Component, Computed, reactive } from "mahal";
 
 export default class extends Component {
 
-    @Reactive
+    @reactive
     firstName = "ujjwal";
 
-    @Reactive
+    @reactive
     lastName = "gupta";
 
     @Computed("firstName", "lastName")

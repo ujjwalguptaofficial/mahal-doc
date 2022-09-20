@@ -15,11 +15,11 @@ The directive `if` is used to render an element conditionally. The element will 
     <div :if(flag)>Marvel</div>
 </html>
 <script>
-import {Component, Reactive } from "mahal"
+import {Component, reactive } from "mahal"
 
 export default class NameComponent extends Component {
 
-    @Reactive
+    @reactive
     flag=true;
 }
 </script>
@@ -35,11 +35,11 @@ The directive `else` block can be used to indicate an else condition for `if`.
     <div :else>DC</div>
 </html>
 <script>
-import {Component, Reactive } from "mahal"
+import {Component, reactive } from "mahal"
 
 export default class NameComponent extends Component {
 
-    @Reactive
+    @reactive
     flag=true;
 }
 </script>
@@ -57,14 +57,14 @@ else-if serves as "else-if" block for "if" condition.
     <div :else>Cartoon network</div>
 </html>
 <script>
-import {Component, Reactive } from "mahal"
+import {Component, reactive } from "mahal"
 
 export default class NameComponent extends Component {
 
-    @Reactive
+    @reactive
     marvel=false;
 
-    @Reactive
+    @reactive
     dc = true
 
 }

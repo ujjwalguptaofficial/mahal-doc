@@ -17,7 +17,7 @@ In mahal - you can listen to an event by using `on:<eventname>` or `@<eventName>
     <button @click="changeName">change my name</button>
 </html>
 <script>
-import {Component, Reactive } from "mahal"
+import {Component, reactive } from "mahal"
 export default class MainComponent extends Component {
 
     name = "ujjwal gupta"
@@ -52,14 +52,14 @@ Consider a login form as child component which has - email and password field. I
 </div>
 </html>
 <script>
-import {Component, Reactive } from "mahal"
+import {Component, reactive } from "mahal"
 
 export default class LoginComponent extends Component{
 
-    @Reactive
+    @reactive
     email="";
 
-    @Reactive
+    @reactive
     password="";
 
     onEmail(value){

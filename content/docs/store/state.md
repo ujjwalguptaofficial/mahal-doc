@@ -16,7 +16,7 @@ The `State` decorator can be used to map the state value. The mapped value is re
 </html>
 
 <script>
-import { Component, Computed, Reactive } from "mahal";
+import { Component, Computed, reactive } from "mahal";
 import { State} from "@mahaljs/store";
 
 export default class extends Component {

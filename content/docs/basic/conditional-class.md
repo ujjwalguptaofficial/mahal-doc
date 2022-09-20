@@ -22,14 +22,14 @@ Consider a case where you have to add the `active` class if active variable is t
 
 </html>
 <script>
-import {Component, Reactive } from "mahal"
+import {Component, reactive } from "mahal"
 
 export default class NameComponent extends Component {
 
-    @Reactive
+    @reactive
     isActive;
 
-    @Reactive
+    @reactive
     nested = {
         nested1: {
             nested2: {
@@ -38,7 +38,7 @@ export default class NameComponent extends Component {
         }
     }
 
-    @Reactive
+    @reactive
     state;
 }
 </script>

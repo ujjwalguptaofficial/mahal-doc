@@ -29,13 +29,13 @@ A directive is called before the target element is rendered. The directive has a
 </div>
 </html>
 <script>
-import {Component, Reactive, Directive } from "mahal"
+import { Component, reactive, directive } from "mahal"
 
 export default class extends Component {
 
-    @Reactive name = 'hello';
+    @reactive name = 'hello';
 
-    @Directive('name')
+    @directive('name')
     nameDirective(el, binding) {
         el.setAttribute('data-name', binding.value || 'SUPER MAN');
     }
@@ -59,22 +59,22 @@ The above directive just use the `element` to set attribute on the target elemen
 </div>
 </html>
 <script>
-import {Component, Reactive, Directive } from "mahal"
+import { Component, reactive, directive } from "mahal"
 
 export default class extends Component {
 
 
-    @Reactive
+    @reactive
     backgroundColor = 'red';
 
-    @Reactive
+    @reactive
     color = 'blue';
 
-    @Reactive
+    @reactive
     el7 = true;
 
 
-    @Directive('highlight')
+    @directive('highlight')
     highlightDirective(el, binding, component) {
         var isDirectiveDestoyedCalled=false;
         function handle() {

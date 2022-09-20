@@ -61,10 +61,10 @@ Let's create a component for our counter app. Create a file - `counter.mahal`
 </html>
 
 <script>
-import { Component, Reactive } from "mahal";
+import { Component, reactive } from "mahal";
 export default class extends Component{
 
-  @Reactive
+  @reactive
   count = 0;
 
   incrementCount(){
@@ -79,7 +79,7 @@ The above component -
 
 1. Renders the `count` from the script.
 2. Contains a button which will call method `incrementCount` on click.
-3. It uses `Reactive` decorator which makes the `count` variable reactive. It means if you will change the value of `count` - automatically it will be updated in UI.
+3. It uses `reactive` decorator which makes the `count` variable reactive. It means if you will change the value of `count` - automatically it will be updated in UI.
 
 <br>
 Let's use this `counter` component now. Open `app.mahal` and add this component as children.
@@ -94,7 +94,7 @@ Let's use this `counter` component now. Open `app.mahal` and add this component 
 </html>
 
 <script>
-import { Component, Reactive, Children } from "mahal";
+import { Component, reactive, Children } from "mahal";
 import Count from "@/components/count.mahal";
 
 @Children({

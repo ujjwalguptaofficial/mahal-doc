@@ -15,11 +15,11 @@ A **model** is a special directive which can be used for two way binding, which 
     <input type="text" :model(value) />
 </html>
 <script>
-import {Component, Reactive } from "mahal"
+import {Component, reactive } from "mahal"
 
 export default class NameComponent extends Component {
 
-    @Reactive
+    @reactive
     value;
 }
 </script>

@@ -16,7 +16,7 @@ Mahal provides a special component **in-place** which can be used for rendering 
 </div>
 </html>
 <script>
-import { Component, Children, Reactive } from "mahal"
+import { Component, Children, reactive } from "mahal"
 import Comp1 from "comp1.mahal"
 import Comp2 from "comp2.mahal"
 
@@ -25,7 +25,7 @@ import Comp2 from "comp2.mahal"
 })
 export class MyComponent extends Component {
 
-    @Reactive
+    @reactive
     compName = 'Comp1'
 
     changeComponent(){
@@ -56,7 +56,7 @@ Let's say we have two tabs - `Tab1`, `Tab2` and we want to render related compon
 </div>
 </html>
 <script>
-import { Component, Children, Reactive } from "mahal"
+import { Component, Children, reactive } from "mahal"
 import Tab1Data from "comp1.mahal"
 import Tab2Data from "comp2.mahal"
 
@@ -69,7 +69,7 @@ export class MyComponent extends Component {
 
     tabCompList = ['Tab1Data', 'Tab2Data'];
 
-    @Reactive
+    @reactive
     activeTab='';
 
     onInit(){

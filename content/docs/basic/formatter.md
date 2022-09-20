@@ -8,7 +8,7 @@ Description: 'Formatter can be used to convert one value to another value in UI'
 
 A formatter is a method which can be used to format(convert one value to another value) in UI using **pipe symbol**. .
 
-A decorator `Formatter` is used to declare a method formatter. A formatter method accepts a parameter which is converted into some other format or value.
+A decorator `formatter` is used to declare a method formatter. A formatter method accepts a parameter which is converted into some other format or value.
 
 Let's create a **upper** formatter which will convert a value into upper case.
 
@@ -17,12 +17,12 @@ Let's create a **upper** formatter which will convert a value into upper case.
     <div :data-name="name | upper">My name is {{name | upper}}</div>
 </html>
 <script>
-import {Component, Formatter } from "mahal"
+import {Component, formatter } from "mahal"
 export class MyComponent extends Component {
 
     name = "ujjwal gupta"
 
-    @Formatter('upper')
+    @formatter('upper')
     toUpper(value){
         return value.toUpperCase();
     }
@@ -47,17 +47,17 @@ Consider a case where a numeric value needs to be -
     <div>Amount is {{name | round | dollar}}</div>
 </html>
 <script>
-import {Component, Formatter } from "mahal"
+import {Component, formatter } from "mahal"
 export class MyComponent extends Component {
 
     amount = 5.12345678
 
-    @Formatter('round')
+    @formatter('round')
     roundValue(value){
         return Math.round(value);
     }
 
-    @Formatter('dollar')
+    @formatter('dollar')
     addDollarSymbol(value){
         return Math.dollar(value);
     }

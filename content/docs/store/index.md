@@ -97,7 +97,7 @@ Once plugin is installed, you can access the `store` variable available on the `
 </html>
 
 <script>
-import { Component, Computed, Reactive } from "mahal";
+import { Component, Computed, reactive } from "mahal";
 
 export default class extends Component {
 

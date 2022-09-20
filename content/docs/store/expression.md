@@ -18,7 +18,7 @@ The `Expression` decorator can be used to map the store expression.
 </html>
 
 <script>
-import { Component, Computed, Reactive } from "mahal";
+import { Component, Computed, reactive } from "mahal";
 import { State, Mutation, Task, Expression } from "@mahaljs/store";
 
 export default class extends Component {

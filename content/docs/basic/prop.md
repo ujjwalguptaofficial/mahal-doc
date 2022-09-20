@@ -17,11 +17,11 @@ create a file - `name.mahal`
     <div>My name is {{name}}</div>
 </html>
 <script>
-import {Component, Prop } from "mahal"
+import {Component, prop } from "mahal"
 
 export default class NameComponent extends Component {
 
-    @Prop()
+    @prop()
     name;
 }
 </script>
@@ -37,7 +37,7 @@ Let's use the component `Name` inside `Main` Component and pass input value name
     <Name :name="name" />
 </html>
 <script>
-import {Component, Reactive, Children } from "mahal"
+import {Component, reactive, Children } from "mahal"
 import Name from "./name.mahal";
 
 @Children({
@@ -45,7 +45,7 @@ import Name from "./name.mahal";
 })
 export default class MainComponent extends Component {
 
-    @Reactive
+    @reactive
     name = "ujjwal gupta"
 }
 </script>
