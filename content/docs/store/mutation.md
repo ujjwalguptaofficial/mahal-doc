@@ -6,7 +6,7 @@ Description: 'The Mutation decorator can be used to map the mutation value.'
 
 # Mutation
 
-The `Mutation` decorator can be used to map the mutation value.
+The `mutation` decorator can be used to map the mutation value.
 
 ```
 <html>
@@ -17,15 +17,15 @@ The `Mutation` decorator can be used to map the mutation value.
 </html>
 
 <script>
-import { Component, Computed, reactive } from "mahal";
-import { State, Mutation } from "@mahaljs/store";
+import { Component } from "mahal";
+import { state, mutation } from "@mahaljs/store";
 
 export default class extends Component {
 
     // map with `name` state
-    @State('name') name;
+    @state('name') name;
 
-    @Mutation('name') setName;
+    @mutation('name') setName;
 
     onNameInput(e){
         const value = e.target.value;

@@ -1,7 +1,7 @@
 ---
 Title: 'Get started'
-Keywords: 'get started, mahal'
-Description: 'Get started with mahal'
+Keywords: 'get started, mahal, introducing, count example'
+Description: 'Get started with mahal.js'
 ---
 
 # Get Started

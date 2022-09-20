@@ -6,7 +6,7 @@ Description: 'The Task decorator can be used to map the store task.'
 
 # Task
 
-The `Task` decorator can be used to map the store task.
+The `task` decorator can be used to map the store task.
 
 ```
 <html>
@@ -18,17 +18,17 @@ The `Task` decorator can be used to map the store task.
 </html>
 
 <script>
-import { Component, Computed, reactive } from "mahal";
-import { State, Mutation, Task } from "@mahaljs/store";
+import { Component } from "mahal";
+import { state, mutation, task } from "@mahaljs/store";
 
 export default class extends Component {
 
     // map with `name` state
-    @State('name') name;
+    @state('name') name;
 
-    @Mutation('name') setName;
+    @mutation('name') setName;
 
-    @Task('saveInfo') saveData;
+    @task('saveInfo') saveData;
 
     onNameInput(e){
         const value = e.target.value;

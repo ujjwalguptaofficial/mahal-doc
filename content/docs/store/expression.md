@@ -6,7 +6,7 @@ Description: 'The Task decorator can be used to map the store task.'
 
 # Expression
 
-The `Expression` decorator can be used to map the store expression.
+The `expression` decorator can be used to map the store expression.
 
 ```
 <html>
@@ -18,24 +18,22 @@ The `Expression` decorator can be used to map the store expression.
 </html>
 
 <script>
-import { Component, Computed, reactive } from "mahal";
-import { State, Mutation, Task, Expression } from "@mahaljs/store";
+import { Component } from "mahal";
+import { state, mutation, task, expression } from "@mahaljs/store";
 
 export default class extends Component {
 
     // map with `name` state
-    @State('name') name;
+    @state('name') name;
 
-    @Mutation('name') setName;
+    @mutation('name') setName;
 
-    @Expression('nameLength') nameLength;
+    @expression('nameLength') nameLength;
 
     onNameInput(e){
         const value = e.target.value;
         this.setName(value);
     }
-
-    
 }
 </script>
 

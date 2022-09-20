@@ -6,7 +6,7 @@ Description: 'The State decorator can be used to map the state value.'
 
 # State
 
-The `State` decorator can be used to map the state value. The mapped value is reactive which means it is automatically updated when state is mutated.
+The `state` decorator can be used to map the state value. The mapped value is reactive which means it is automatically updated when state is mutated.
 
 ```
 <html>
@@ -16,13 +16,13 @@ The `State` decorator can be used to map the state value. The mapped value is re
 </html>
 
 <script>
-import { Component, Computed, reactive } from "mahal";
-import { State} from "@mahaljs/store";
+import { Component } from "mahal";
+import { state} from "@mahaljs/store";
 
 export default class extends Component {
 
     // map with `name` state
-    @State('name') name;
+    @state('name') name;
 }
 </script>
 
