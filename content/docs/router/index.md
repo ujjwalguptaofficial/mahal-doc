@@ -27,7 +27,9 @@ A simple routes looks like -
 ```
 import { createRoute } from "@mahaljs/router";
 import Start from "./components/start.mahal";
-export const routes = {
+
+// create routes
+const routes = {
     ...createRoute({
         path: "/",
         component: Start,
@@ -46,7 +48,18 @@ A Router can be created by creating instance of `Router` class;
 
 ```
 import { Router } from "@mahaljs/router";
+import { createRoute } from "@mahaljs/router";
+import Start from "./components/start.mahal";
 
+const routes = {
+    ...createRoute({
+        path: "/",
+        component: Start,
+        name: "home",
+    }),
+}
+
+// create router instance
 const router = new Router(routes, {
     mode: "history"
 });
@@ -54,17 +67,35 @@ const router = new Router(routes, {
 
 ### use router
 
-`mahal-router` is exported as plugin for mahal. So you need to add it in plugin using `extend`. It takes `routes` list as arguments.
+`mahal-router` is exported as plugin for mahal. So you need to add it in plugin using `extend`. It takes `router` as arguments.
 
 ```
 import { Mahal } from "mahal";
 import Main from "./components/main.mahal";
 import { RouterPlugin } from "@mahaljs/router";
-import { routes } from "../routes";
+import { Router } from "@mahaljs/router";
+import { createRoute } from "@mahaljs/router";
+import Start from "./components/start.mahal";
 
 export const app = new Mahal(Main, '#app');
+
+
+// router setup
+
+const routes = {
+    ...createRoute({
+        path: "/",
+        component: Start,
+        name: "home",
+    }),
+}
+
+const router = new Router(routes, {
+    mode: "history"
+});
+
 // install router plugin
-app.extend.plugin(RouterPlugin, routes);
+app.extend.plugin(RouterPlugin, router);
 
 app.create();
 ```
