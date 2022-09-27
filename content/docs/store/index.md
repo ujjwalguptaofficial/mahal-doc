@@ -15,7 +15,7 @@ Mahal provides [mahal-store](https://github.com/ujjwalguptaofficial/mahal-store)
 A simple example of store looks like this in Godam - 
 
 ```
-import { Godam, Mutation,Expression, Task, Computed} from "godam";
+import { Godam, Mutation,Expression, Task, computed} from "godam";
 
 class MyState{
 
@@ -35,7 +35,7 @@ class MyMutation extends Mutation{
 
 class MyExpression extends Expression {
 
-    @Computed('name')
+    @computed('name')
     get nameLength() {
         return this.get('name').length;
     }
