@@ -30,6 +30,9 @@ export default class extends Component {
 
     @expression('nameLength') nameLength;
 
+    //map with expression fullName of room account
+    @expression('fullName','account') fullName;
+
     onNameInput(e){
         const value = e.target.value;
         this.setName(value);

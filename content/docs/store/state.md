@@ -23,6 +23,9 @@ export default class extends Component {
 
     // map with `name` state
     @state('name') name;
+
+    //map with state id of room account
+    @state('id', 'account') id;
 }
 </script>
 

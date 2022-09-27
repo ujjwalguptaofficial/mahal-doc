@@ -60,7 +60,7 @@ class MyTask extends Task {
 }
 
 
-const myStore = new Godam({
+export const myStore = new Godam({
     state : MyState,
     mutation: MyMutation,
     expression: MyExpression,
@@ -72,17 +72,28 @@ For more info, please read the godam docs - [https://github.com/ujjwalguptaoffic
 
 Let's use `myStore` in our mahal app.
 
+#### Install mahal-store
+
+```
+npm i @mahaljs/store
+```
+
+#### Use mahal-store
+
 `mahal-store` is exported as plugin. So you need to install the plugin in your app.
 
 ```
 import { Mahal } from "mahal";
 import Main from "./components/main.mahal";
 import MahalStore from "@mahaljs/store";
-import store from "../store";
+
+// import godam instance
+import { myStore } from "../store";
 
 export const app = new Mahal(Main, '#app');
-// install mahal store plugin
-app.extend.plugin(MahalStore, store);
+
+// install mahal store plugin and pass your godam instance as arguments which will be used as store
+app.extend.plugin(MahalStore, myStore);
 
 app.create();
 ```
@@ -112,6 +123,28 @@ export default class extends Component {
 </script>
 
 ```
+
+It is recommend to create a Base class, so that `this.store` can be used without initiating this in each component - 
+
+```
+import { Component } from "mahal";
+
+export class BaseComponent extends Component{
+
+    get store(){
+        return this.global.store;
+    }
+}
+
+export default class extends BaseComponent {
+
+    get name(){
+         return this.store.get("name");
+    }
+}
+```
+
+Now you can extend `BaseComponent` in each component which will allow you to reuse common codes.
 
 mahal-store provides following decorators as hooks to help you access the store in easiest way - 
 

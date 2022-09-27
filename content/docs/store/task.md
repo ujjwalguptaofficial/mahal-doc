@@ -30,6 +30,9 @@ export default class extends Component {
 
     @task('saveInfo') saveData;
 
+    //map with task login of room account
+    @task('login','account') login;
+
     onNameInput(e){
         const value = e.target.value;
         this.setName(value);

@@ -27,6 +27,9 @@ export default class extends Component {
 
     @mutation('name') setName;
 
+   //map with mutation id of room account
+    @mutation('id','account') setId;
+
     onNameInput(e){
         const value = e.target.value;
         this.setName(value);
