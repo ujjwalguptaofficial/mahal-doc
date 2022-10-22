@@ -8,7 +8,7 @@ Description: 'Directive are reusable method which can be attached on element for
 
 Directive are reusable method which can be attached on element for low level access to element. Similar to component - they have lifecycle. 
 
-The `model`, `class`, `html` are examples of directive.
+The `model`, `show` , `ref` are examples of directive.
 
 A directive is called before the target element is rendered. The directive has access to element and parameter passed to it. There are three lifecycle for directive - 
 

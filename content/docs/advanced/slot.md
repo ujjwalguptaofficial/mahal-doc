@@ -49,6 +49,23 @@ let's use the `MyBtnComponent` -
 </html>
 ```
 
+You can also put default content inside the slot. This will allow you to render something by default when user of the component does not provide anything.
+
+```
+<html>
+    <button>
+        <slot>Ok</slot>
+    </button>
+</html>
+<script>
+import {Component } from "mahal"
+
+export default class MyBtnComponent extends Component {
+
+}
+</script>
+```
+
 ## Named slot
 
 Slot can be named in order to target a particular slot when there are multiple slot.
