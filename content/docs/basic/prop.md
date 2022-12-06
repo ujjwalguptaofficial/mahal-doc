@@ -27,7 +27,7 @@ export default class NameComponent extends Component {
 </script>
 ```
 
-In the above code - we have marked the property `name` as Prop by using the decorator `Prop`.
+In the above code - we have marked the class property `name` as Prop by using the decorator `prop`.
 
 
 Let's use the component `Name` inside `Main` Component and pass input value name.
@@ -51,8 +51,29 @@ export default class MainComponent extends Component {
 </script>
 ```
 
+## default value
+
+You can assign default value to class property which will be considered as default value when prop value is not passed from the parent component. 
+
+Let's assign a default name to our component - 
+
+```
+<html>
+    <div>My name is {{name}}</div>
+</html>
+<script>
+import {Component, prop } from "mahal"
+
+export default class NameComponent extends Component {
+
+    @prop()
+    name = "Batman";
+}
+</script>
+```
+
 ## Options
 
-Prop have following options - 
+prop decorator have following options - 
 
 1. type - accepts data type of the prop. When provided it checks the provided data type.
